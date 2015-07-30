@@ -1,4 +1,5 @@
 <header class="header">
+  <?php include 'modules/menu/index.html' ?>
   <div class="slider">
     <img src="assets/img/Jumbotron/jumbotron.jpg" alt="jumbotron">
   </div>
