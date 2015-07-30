@@ -54,7 +54,7 @@
   <?php include 'modules/menu/index.html' ?>
   <main>
     <?php include 'modules/servicos/index.html' ?>
-    <?php include 'modules/portifolio/index.html' ?>
+    <?php include 'modules/portfolio/index.html' ?>
     <?php include 'modules/frases/index.html' ?>
     <?php include 'modules/equipe/index.html' ?>
     <?php include 'modules/contato/index.html' ?>
