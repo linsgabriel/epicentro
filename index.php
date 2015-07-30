@@ -50,8 +50,7 @@
   <script src="scripts.js"></script>
 </head>
 <body>
-  <?php include 'modules/jumbotron/index.html' ?>
-  <?php include 'modules/menu/index.html' ?>
+  <?php include 'modules/jumbotron/index.php' ?>
   <main>
     <?php include 'modules/servicos/index.html' ?>
     <?php include 'modules/portfolio/index.html' ?>
