@@ -53,6 +53,8 @@
   <?php include 'modules/jumbotron/index.html' ?>
   <?php include 'modules/menu/index.html' ?>
   <main>
+    <?php include 'modules/servico/index.html' ?>
+    <?php include 'modules/portfolio/index.html' ?>
     <?php include 'modules/servicos/index.html' ?>
     <?php include 'modules/portifolio/index.html' ?>
     <?php include 'modules/frases/index.html' ?>
