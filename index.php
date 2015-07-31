@@ -1,6 +1,6 @@
 <?php
 
-  $nome = array('jumbotron', 'menu', 'servicos', 'portifolio', 'frases', 'equipe', 'contato', 'footer');
+  $nome = array('jumbotron', 'menu', 'servicos', 'frases', 'equipe', 'contato', 'footer');
 
   // Monta o arquivo styles.css
 
