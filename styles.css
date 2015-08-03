@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: AlegreyaSans;
-    src: url('fonts/alegreya-sans/AlegreyaSans-Regular.otf');
+    src: url('assets/fonts/alegreya-sans/AlegreyaSans-Regular.otf');
 }
 
 @font-face {
     font-family: AlegreyaSC;
-    src: url('fonts/alegreya-sans/AlegreyaSansSC-Regular.otf');
+    src: url('assets/fonts/alegreya-sans/AlegreyaSansSC-Regular.otf');
 }
 
 @font-face {
     font-family: RosarioItalic;
-    src: url('fonts/rosario/Rosario-Italic.otf');
+    src: url('assets/fonts/rosario/Rosario-Italic.otf');
 }
 
 @font-face {
     font-family: Raleway;
-    src: url('fonts/raleway/Raleway-Regular.ttf');
+    src: url('assets/fonts/raleway/Raleway-Regular.ttf');
 }
 
 /* GLOBAL ------------------------------------------------------------------- */
@@ -33,4 +33,135 @@
 img {
   height: auto;
   max-width: 100%;
+}
+
+h1 {
+  font-family: 'AlegreyaSC', Arial, sans-serif;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'AlegreyaSans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Jumbotron ---------------------------------------------------------------- */
+
+.jumbotron nav {
+  display: none;
+}
+
+.jumbotron {
+  color: #fff;
+  max-height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.jumbotron:after {
+  background-color: rgba(59,6,34, .15);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.jumbotron .slider img {
+  display: block;
+}
+
+.jumbotron .frases {
+  position: absolute;
+  z-index: 3;
+}
+
+.jumbotron .frases p {
+  display: none;
+  font-family: 'AlegreyaSans';
+  text-align: center;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.jumbotron .frases p.active {
+  display: inherit;
+}
+
+.jumbotron .telefone {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 3px #000;
+  z-index: 3;
+  width: 100%;
+}
+
+/* Resolução 320px - 600px */
+
+  .jumbotron .frases {
+    left: calc(50% - 45vw);
+    max-width: 90vw;
+    top: 40%;
+  }
+
+  .jumbotron .frases p {
+    display: none;
+    font-size: 5vw;
+  }
+
+  .jumbotron .telefone {
+    bottom: 1vw;
+    font-size: 4vw;
+  }
+
+
+@media screen and (min-width: 601px) {
+
+  .jumbotron .frases {
+    left: calc(50% - 30vw);
+    max-width: 60vw;
+    top: 40%;
+  }
+
+  .jumbotron .frases p {
+    display: none;
+    font-size: 2.5vw;
+  }
+
+  .jumbotron .telefone {
+    bottom: 1vw;
+    font-size: 2vw;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+
+  .jumbotron .frases {
+    left: calc(50% - 25vw);
+    max-width: 50vw;
+    top: 50%;
+  }
+
+  .jumbotron .frases p {
+    display: none;
+    font-size: 1.6vw;
+  }
+
+  .jumbotron .telefone {
+    bottom: 2vw;
+    font-size: 1.2vw;
+  }
 }
