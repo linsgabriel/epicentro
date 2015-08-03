@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: AlegreyaSans;
-    src: url('fonts/alegreya-sans/AlegreyaSans-Regular.otf');
+    src: url('assets/fonts/alegreya-sans/AlegreyaSans-Regular.otf');
 }
 
 @font-face {
     font-family: AlegreyaSC;
-    src: url('fonts/alegreya-sans/AlegreyaSansSC-Regular.otf');
+    src: url('assets/fonts/alegreya-sans/AlegreyaSansSC-Regular.otf');
 }
 
 @font-face {
     font-family: RosarioItalic;
-    src: url('fonts/rosario/Rosario-Italic.otf');
+    src: url('assets/fonts/rosario/Rosario-Italic.otf');
 }
 
 @font-face {
     font-family: Raleway;
-    src: url('fonts/raleway/Raleway-Regular.ttf');
+    src: url('assets/fonts/raleway/Raleway-Regular.ttf');
 }
 
 /* GLOBAL ------------------------------------------------------------------- */
@@ -48,4 +48,8 @@ h2 {
 .wrapper {
   margin: 0 auto;
   max-width: 1000px;
+}
+
+.hidden {
+  display: none;
 }
