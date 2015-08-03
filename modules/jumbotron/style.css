@@ -1,10 +1,6 @@
 
 /* Jumbotron ---------------------------------------------------------------- */
 
-.jumbotron nav {
-  display: none;
-}
-
 .jumbotron {
   color: #fff;
   max-height: 100vh;

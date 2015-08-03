@@ -1,8 +1,8 @@
 <?php
 // Identifica erros
 
-  ini_set('display_errors', 'on');
-  error_reporting(E_ALL);
+  //ini_set('display_errors', 'on');
+  //error_reporting(E_ALL);
 
   $nome = array('jumbotron', 'menu', 'servicos', 'portfolio', 'frases', 'equipe', 'contato', 'footer');
 
