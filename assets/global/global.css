@@ -34,3 +34,18 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+h1 {
+  font-family: 'AlegreyaSC', Arial, sans-serif;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'AlegreyaSans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
