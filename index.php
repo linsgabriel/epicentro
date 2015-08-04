@@ -13,7 +13,7 @@
   fclose($clear);
 
   $global_css = file_get_contents('assets/global/global.css', 'a+');
-  $add_global_css = fopen('styles.css', 'a+');
+  $add_global_css = fopen('styles.css', 'a');
   fwrite($add_global_css, $global_css);
   fclose($add_global_css);
 
@@ -21,7 +21,7 @@
 
     $style = file_get_contents('modules/'.$nome[$i].'/style.css');
 
-    $styles = fopen('styles.css', 'a+');
+    $styles = fopen('styles.css', 'a');
     fwrite($styles, "");
     fwrite($styles, $style);
     fclose($styles);
@@ -38,7 +38,7 @@
 
     $script = file_get_contents('modules/'.$nome[$i].'/script.js');
 
-    $scripts = fopen('scripts.js', 'a+');
+    $scripts = fopen('scripts.js', 'a');
     fwrite($scripts, "");
     fwrite($scripts, $script);
     fclose($scripts);
