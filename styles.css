@@ -293,11 +293,7 @@ h2 {
 /* Serviços ----------------------------------------------------------------- */
 
 .section.servicos h1 {
-<<<<<<< HEAD
-  background-color: rgba(255, 255, 255, .8);
-=======
   background-color: rgba(255, 255, 255, 1);
->>>>>>> 620bb4d2dd408e7e139f0ef65a6a8c00eb0d9034
   font-weight: normal;
   left: 0;
   padding: .2em;
@@ -444,11 +440,7 @@ h2 {
   }
 
   .section.servicos .postit p {
-<<<<<<< HEAD
-    font-size: .8em;
-=======
     font-size: 1em;
->>>>>>> 620bb4d2dd408e7e139f0ef65a6a8c00eb0d9034
     margin: .5vw 0;
   }
 
