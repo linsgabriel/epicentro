@@ -1,0 +1,23 @@
+
+/* Frase -------------------------------------------------------------------- */
+
+.section.frase {
+  background: url('assets/img/Frase/fundo.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 50vw;
+  position: relative;
+}
+
+.section.frase p {
+  background-color: rgba(255, 255, 255, .8);
+  color: #520034;
+  font: 2em 'AlegreyaSC';
+  font-weight: normal;
+  left: 0;
+  padding: 1em;
+  position: absolute;
+  text-align: center;
+  top: calc(50% - 1.8em);
+  width: 100%;
+}
