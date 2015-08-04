@@ -50,6 +50,7 @@
 <head>
   <meta charset="utf-8">
   <title>Epicentro Tecnologia</title>
+  <link rel="icon" type="image/png" href="assets/img/Favicon/favicon.png" />
   <link rel="stylesheet" href="styles.css" charset="utf-8">
   <script src="scripts.js"></script>
 </head>
