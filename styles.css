@@ -163,3 +163,300 @@ h2 {
     font-size: 1.2vw;
   }
 }
+/*------------- CSS Menu -------------------*/
+.menu {
+  position: fixed;
+  top: 0;
+  margin-left: calc(50% - 512px);
+  width: 1024px;
+  height: 85px;
+  background-color: rgba(255,255,255,1);
+  color: #842c2e;
+  z-index: 9999;
+}
+
+.menu h1 {
+  display: none;
+}
+
+.menu .logo {
+  background-image: url('assets/img/Menu/logo.png');
+  background-size: 100% 100%;
+  width: 280px;
+  height: 60px;
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 12px; 
+}
+
+.menu ul {
+  display: inline-block;
+  float: right;
+  margin-top: 20px; 
+  margin-right: 10px;
+}
+
+.menu ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'AlegreyaSC', Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  letter-spacing: 4px;
+}
+
+.menu a {
+  border: none;
+  text-decoration: none;
+  color: #842c2e;
+  transition: all .5s linear;
+}
+
+.menu a:hover {
+  color: #414142;
+  border-bottom: 1px solid #414142;
+}
+
+.menu .icone-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu ul {
+    margin-top: 25px;
+  }
+
+  .menu ul li {
+    padding: 5px;
+    font-size: 19px;
+  }
+
+  .menu .logo {
+    float: left;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    width: 100%;
+  }
+
+  .menu ul {
+    display: block;
+    width: 100%;
+    margin: 0;  
+    text-align: center;
+    transform: translateX(0); /* 120% e fica 0 ao clicar no ícone-menu pelo onclick no JS */
+    transition: all .4s linear;
+  }
+
+  .menu ul li {
+    display: block;
+    width: 100%;
+    background-color: rgba(255,255,255,.9);
+    padding-bottom: 20px;
+  }
+
+  .menu ul li:first-child {
+    padding-top: 20px;
+  }
+
+  .menu .icone-menu {
+    display: block;
+    position: relative;
+    float: right;
+    padding: 0 10px;
+    height: 100%;
+    font-size: 80px;
+    font-weight: bold;
+    color: #414142;;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu .logo {
+    background-image: url('assets/img/Menu/icone.png');
+    background-size: 100% 100%;
+    width: 60px;
+    height: 60px;
+  }
+}
+/* Serviços ----------------------------------------------------------------- */
+
+.section.servicos h1 {
+  background-color: rgba(255, 255, 255, 1);
+  font-weight: normal;
+  left: 0;
+  padding: .2em;
+  position: absolute;
+  text-align: center;
+  top: 4vw;
+  width: 100%;
+}
+
+.section.servicos .postit {
+  color: #fff;
+  display: inline-block;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5), inset 1px 1px 0 rgba(255, 255, 255, .2), inset -1px -1px 0 rgba(0, 0, 0, .1);
+  text-align: center;
+  position: relative;
+}
+
+.section.servicos .postit:after {
+  background-color: rgb(101, 58, 1);
+  background: radial-gradient(ellipse at center, rgb(181, 108, 30) 5%, rgb(191, 118, 40) 40%, rgb(171, 98, 20) 60%, rgb(101, 58, 1) 100%);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .5), inset -1px -1px 1px rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+}
+
+.section.servicos .postit.laranja {
+  background-color: #ff8a76;
+}
+
+.section.servicos .postit.verde {
+  background-color: #abd97f;
+}
+
+.section.servicos .postit.azul {
+  background-color: #5a7ab5;
+}
+
+.section.servicos .postit.turquesa {
+  background-color: #00c8b5;
+}
+
+.section.servicos .postit.rosa {
+  background-color: #f16ccd;
+}
+
+.section.servicos .postit img {
+  display: block;
+}
+
+.section.servicos .postit h2 {
+  font-family: "AlegreyaSC";
+}
+
+.section.servicos .postit p {
+  font-family: "RosarioItalic";
+}
+
+/* Resolução 320px - 600px */
+
+  .section.servicos {
+    background: #ccc url('assets/img/Servicos/background.png');
+    padding: 15vw 0 15vw 5vw;
+    position: relative;
+  }
+
+  .section.servicos .postit {
+    margin: 15vw 5vw 0 0;
+    padding: 5vw;
+    width: calc(100% - 3vw);
+  }
+
+  .section.servicos .postit:after {
+    left: calc(50% - 3.5vw);
+    padding: 5vw;
+    top: -3vw;
+  }
+
+  .section.servicos h1 {
+    font-size: 2em;
+  }
+
+  .section.servicos .postit p {
+    margin: 0;
+  }
+
+  .section.servicos .postit img {
+    height: 25vw;
+    margin: 5vw auto;
+  }
+
+@media screen and (min-width: 601px) {
+  .section.servicos {
+    padding: 15vw 0 10vw 5vw;
+  }
+
+  .section.servicos h1 {
+    font-size: 2.5em;
+  }
+
+  .section.servicos .postit {
+    margin: 10vw 5vw 0 0;
+    padding: 5vw;
+    width: calc(50% - 5.5vw);
+  }
+
+  .section.servicos .postit:after {
+    left: calc(50% - 1.5vw);
+    padding: 3vw;
+    top: -1.5vw;
+  }
+
+  .section.servicos .postit img {
+    height: 13vw;
+    margin: 2vw auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.servicos {
+    padding: 16vw 0 10vw 2vw;
+    position: relative;
+  }
+
+  .section.servicos h1 {
+    font-size: 2.7em;
+  }
+
+  .section.servicos .postit {
+    margin: 3vw 2vw 0 0;
+    padding: 1vw;
+    width: calc(20% - 2.4vw);
+  }
+
+  .section.servicos .postit:after {
+    left: calc(50% - 0.8vw);
+    padding: 1.4vw;
+    top: -0.8vw;
+  }
+
+  .section.servicos .postit img {
+    height: 5vw;
+    margin: 1vw auto .5vw auto;
+  }
+
+  .section.servicos .postit p {
+    font-size: 1em;
+    margin: .5vw 0;
+  }
+
+  .section.servicos .postit.laranja {
+    transform: rotate(10deg);
+  }
+
+  .section.servicos .postit.verde {
+    transform: rotate(-10deg);
+  }
+
+  .section.servicos .postit.turquesa {
+    transform: rotate(10deg);
+  }
+
+  .section.servicos .postit.rosa {
+    transform: rotate(-10deg);
+  }
+}
