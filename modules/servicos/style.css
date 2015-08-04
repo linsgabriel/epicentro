@@ -1,0 +1,171 @@
+
+/* Serviços ----------------------------------------------------------------- */
+
+.section.servicos h1 {
+  background-color: rgba(255, 255, 255, .8);
+  font-weight: normal;
+  left: 0;
+  padding: .2em;
+  position: absolute;
+  text-align: center;
+  top: 4vw;
+  width: 100%;
+}
+
+.section.servicos .postit {
+  color: #fff;
+  display: inline-block;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5), inset 1px 1px 0 rgba(255, 255, 255, .2), inset -1px -1px 0 rgba(0, 0, 0, .1);
+  text-align: center;
+  position: relative;
+}
+
+.section.servicos .postit:after {
+  background-color: rgb(101, 58, 1);
+  background: radial-gradient(ellipse at center, rgb(181, 108, 30) 5%, rgb(191, 118, 40) 40%, rgb(171, 98, 20) 60%, rgb(101, 58, 1) 100%);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .5), inset -1px -1px 1px rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+}
+
+.section.servicos .postit.laranja {
+  background-color: #ff8a76;
+}
+
+.section.servicos .postit.verde {
+  background-color: #abd97f;
+}
+
+.section.servicos .postit.azul {
+  background-color: #5a7ab5;
+}
+
+.section.servicos .postit.turquesa {
+  background-color: #00c8b5;
+}
+
+.section.servicos .postit.rosa {
+  background-color: #f16ccd;
+}
+
+.section.servicos .postit img {
+  display: block;
+}
+
+.section.servicos .postit h2 {
+  font-family: "AlegreyaSC";
+}
+
+.section.servicos .postit p {
+  font-family: "RosarioItalic";
+}
+
+/* Resolução 320px - 600px */
+
+  .section.servicos {
+    background: #ccc url('assets/img/Servicos/background.png');
+    padding: 15vw 0 15vw 5vw;
+    position: relative;
+  }
+
+  .section.servicos .postit {
+    margin: 15vw 5vw 0 0;
+    padding: 5vw;
+    width: calc(100% - 3vw);
+  }
+
+  .section.servicos .postit:after {
+    left: calc(50% - 3.5vw);
+    padding: 5vw;
+    top: -3vw;
+  }
+
+  .section.servicos h1 {
+    font-size: 2em;
+  }
+
+  .section.servicos .postit p {
+    margin: 0;
+  }
+
+  .section.servicos .postit img {
+    height: 25vw;
+    margin: 5vw auto;
+  }
+
+@media screen and (min-width: 601px) {
+  .section.servicos {
+    padding: 15vw 0 10vw 5vw;
+  }
+
+  .section.servicos h1 {
+    font-size: 2.5em;
+  }
+
+  .section.servicos .postit {
+    margin: 10vw 5vw 0 0;
+    padding: 5vw;
+    width: calc(50% - 5.5vw);
+  }
+
+  .section.servicos .postit:after {
+    left: calc(50% - 1.5vw);
+    padding: 3vw;
+    top: -1.5vw;
+  }
+
+  .section.servicos .postit img {
+    height: 13vw;
+    margin: 2vw auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.servicos {
+    padding: 16vw 0 10vw 2vw;
+    position: relative;
+  }
+
+  .section.servicos h1 {
+    font-size: 2.7em;
+  }
+
+  .section.servicos .postit {
+    margin: 3vw 2vw 0 0;
+    padding: 1vw;
+    width: calc(20% - 2.4vw);
+  }
+
+  .section.servicos .postit:after {
+    left: calc(50% - 0.8vw);
+    padding: 1.4vw;
+    top: -0.8vw;
+  }
+
+  .section.servicos .postit img {
+    height: 5vw;
+    margin: 1vw auto .5vw auto;
+  }
+
+  .section.servicos .postit p {
+    font-size: .8em;
+    margin: .5vw 0;
+  }
+
+  .section.servicos .postit.laranja {
+    transform: rotate(10deg);
+  }
+
+  .section.servicos .postit.verde {
+    transform: rotate(-10deg);
+  }
+
+  .section.servicos .postit.turquesa {
+    transform: rotate(10deg);
+  }
+
+  .section.servicos .postit.rosa {
+    transform: rotate(-10deg);
+  }
+}
