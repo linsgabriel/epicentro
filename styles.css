@@ -169,7 +169,7 @@ h2 {
   top: 0;
   margin-left: calc(50% - 512px);
   width: 1024px;
-  height: 85px;
+  height: 70px;
   background-color: rgba(255,255,255,1);
   color: #842c2e;
   z-index: 9999;
@@ -182,18 +182,18 @@ h2 {
 .menu .logo {
   background-image: url('assets/img/Menu/logo.png');
   background-size: 100% 100%;
-  width: 280px;
-  height: 60px;
+  width: 260px;
+  height: 50px;
   display: inline-block;
   float: left;
   margin-left: 20px;
-  margin-top: 12px; 
+  margin-top: 10px; 
 }
 
 .menu ul {
   display: inline-block;
   float: right;
-  margin-top: 20px; 
+  margin-top: 15px; 
   margin-right: 10px;
 }
 
@@ -229,7 +229,7 @@ h2 {
   }
 
   .menu ul {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   .menu ul li {
@@ -260,7 +260,7 @@ h2 {
   .menu ul li {
     display: block;
     width: 100%;
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(255,255,255,.95);
     padding-bottom: 20px;
   }
 
@@ -269,16 +269,15 @@ h2 {
   }
 
   .menu .icone-menu {
-    display: block;
+    display: inline-block;
     position: relative;
     float: right;
-    padding: 0 10px;
+    top: -13px;
+    right: 5px;
     height: 100%;
     font-size: 80px;
-    font-weight: bold;
-    color: #414142;;
+    color: #414142;
     cursor: pointer;
-    vertical-align: middle;
   }
 }
 
@@ -286,6 +285,7 @@ h2 {
   .menu .logo {
     background-image: url('assets/img/Menu/icone.png');
     background-size: 100% 100%;
+    margin-top: 5px;
     width: 60px;
     height: 60px;
   }
