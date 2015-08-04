@@ -3,6 +3,7 @@
 
 .jumbotron {
   color: #fff;
+  font-family: 'AlegreyaSans';
   max-height: 100vh;
   overflow-y: hidden;
   position: relative;
@@ -22,6 +23,8 @@
 
 .jumbotron .slider img {
   display: block;
+  height: auto;
+  width: 100%;
 }
 
 .jumbotron .frases {
@@ -31,7 +34,6 @@
 
 .jumbotron .frases p {
   display: none;
-  font-family: 'AlegreyaSans';
   text-align: center;
   text-shadow: 1px 1px 3px #000;
 }
