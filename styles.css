@@ -58,6 +58,7 @@ h2 {
 
 .jumbotron {
   color: #fff;
+  font-family: 'AlegreyaSans';
   max-height: 100vh;
   overflow-y: hidden;
   position: relative;
@@ -77,6 +78,8 @@ h2 {
 
 .jumbotron .slider img {
   display: block;
+  height: auto;
+  width: 100%;
 }
 
 .jumbotron .frases {
@@ -86,7 +89,6 @@ h2 {
 
 .jumbotron .frases p {
   display: none;
-  font-family: 'AlegreyaSans';
   text-align: center;
   text-shadow: 1px 1px 3px #000;
 }

@@ -9,5 +9,5 @@
     <p>Sites 100% responsivos, administração intuitiva com WordPress, integração com redes sociais e otimização para o Google Analytics</p>
     <p>Produzimos seu projeto do design ao conteúdo, personalizado para as suas necessidades e focado na obtenção de resultados</p>
   </div>
-  <p class="telefone">telefone Ubatuba-SP</p>
+  <p class="telefone">3832-6789 - Ubatuba-SP</p>
 </header>
