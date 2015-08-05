@@ -476,21 +476,34 @@ h2 {
   background: url('assets/img/Frase/fundo2.jpg');
   background-size: cover;
   background-position: center;
+  display: none;
   min-height: 50vw;
   position: relative;
 }
 
 .section.frase p {
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, 1);
   color: #520034;
   font: 2em 'AlegreyaSC';
   font-weight: normal;
   left: 0;
-  padding: 1em;
+  padding: 3em;
   position: absolute;
   text-align: center;
-  top: calc(50% - 1.8em);
+  top: calc(50% - 4em);
   width: 100%;
+}
+
+@media screen and (min-width: 601px) {
+  .section.frase {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.frase {
+    display: inherit;
+  }
 }
 .section.footer {
   background-color: #e9e9ec;
