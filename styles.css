@@ -613,7 +613,7 @@ h2 {
   .section.footer .bottom .disclaimer {
     font-size: .7em;
     text-align: right;
-    width: calc(50% - 2em);
+    width: calc(50% - 3em);
   }
 }
 
@@ -648,6 +648,6 @@ h2 {
   .section.footer .bottom .disclaimer {
     font-size: .9em;
     text-align: right;
-    width: calc(50% - 5.3em);
+    width: calc(50% - 4.4em);
   }
 }
