@@ -54,6 +54,10 @@
   width: 60%;
 }
 
+.section.footer .contatos .email {
+  margin-top: .5em;
+}
+
 .section.footer .bottom {
   margin-top: 2em;
 }
@@ -98,6 +102,10 @@
     width: 50%;
   }
 
+  .section.footer .contatos .email {
+    margin-top: 1em;
+  }
+
   .section.footer .bottom .logo-container {
     padding-left: .8em;
     width: 50%;
@@ -132,6 +140,10 @@
     padding-left: 4em;
     text-align: left;
     width: 50%;
+  }
+
+  .section.footer .contatos .email {
+    margin-top: 1em;
   }
 
   .section.footer .bottom .logo-container {
