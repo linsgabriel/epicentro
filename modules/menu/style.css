@@ -1,5 +1,6 @@
 /*------------- CSS Menu -------------------*/
 .menu {
+  display: none;
   position: fixed;
   top: 0;
   margin-left: calc(50% - 512px);
@@ -7,7 +8,7 @@
   height: 70px;
   background-color: rgba(255,255,255,1);
   color: #842c2e;
-  z-index: 9999;
+  z-index: 4;
 }
 
 .menu h1 {
@@ -22,13 +23,13 @@
   display: inline-block;
   float: left;
   margin-left: 20px;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .menu ul {
   display: inline-block;
   float: right;
-  margin-top: 15px; 
+  margin-top: 15px;
   margin-right: 10px;
 }
 
@@ -86,7 +87,7 @@
   .menu ul {
     display: block;
     width: 100%;
-    margin: 0;  
+    margin: 0;
     text-align: center;
     transform: translateX(0); /* 120% e fica 0 ao clicar no ícone-menu pelo onclick no JS */
     transition: all .4s linear;
