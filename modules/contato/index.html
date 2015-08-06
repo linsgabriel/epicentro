@@ -1,19 +1,21 @@
 <section class="section contato" id="contato">
   <h1>Contato</h1>
-  <form class="form">
-    <label>
-      Nome<input type="text">
-    </label>
-    <label>
-      Email<input type="email">
-    </label>
-    <label>
-      Assunto<textarea></textarea>
-    </label>
-    <label>
-      Mensagem<textarea></textarea>
-    </label>
-    <input type="submit" value="enviar">
-    <button class="close">X</button>
-  </form>
+  <div class="wrapper">
+    <form class="form">
+      <label>
+        <span class="titulo">Nome:</span><input class="input" type="text">
+      </label>
+      <label>
+        <span class="titulo">Email:</span><input class="input" type="email">
+      </label>
+      <label>
+        <span>Assunto:</span><br><input class="full" type="text">
+      </label>
+      <label>
+        <span>Mensagem</span><textarea></textarea>
+      </label>
+      <input class="enviar" type="submit" value="enviar">
+      <button class="close">X</button>
+    </form>
+  </div>
 </section>
