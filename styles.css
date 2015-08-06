@@ -173,7 +173,6 @@ h2 {
 }
 /*------------- CSS Menu -------------------*/
 .menu {
-  display: none;
   position: fixed;
   top: 0;
   margin-left: calc(50% - 512px);
@@ -478,6 +477,7 @@ h2 {
 .section.frase {
   background: url('assets/img/Frase/fundo2.jpg');
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   display: none;
   min-height: 50vw;
