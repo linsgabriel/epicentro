@@ -102,6 +102,7 @@ h2 {
 
 .jumbotron .frases p.active {
   display: inherit;
+  letter-spacing: 4px;
 }
 
 .jumbotron .telefone {
