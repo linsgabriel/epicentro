@@ -480,21 +480,21 @@ h2 {
 }
 
 .section.portfolio h1 {
-	height: 100px;
 	width: 100%;
 	text-align: center;
-	background-color: rgba(138, 47, 48,.85);
+	background-color: rgba(200, 47, 48,.85);
 	color: #fff;
 	margin-top: 60px;
-	padding-top: 20px;
+	padding: .2em;
+  font-weight: normal;
 }
 
 .section.portfolio .laptop {
 	background-image: url('assets/img/Portfolio/laptop.png');
 	background-size: 100% 100%;
-	width: 1024px;
+	width: 924px;
 	max-width: 100%;
-	height: 623px;
+	height: 523px;
 	margin: auto;
 	margin-top: 200px;
 }
@@ -503,7 +503,7 @@ h2 {
 	position: absolute;
 	height: 70px;
 	width: 790px;
-	margin-top: -90px;
+	margin-top: -100px;
 	left: calc(50% - 395px);	
 }
 
@@ -515,8 +515,8 @@ h2 {
 
 .section.portfolio .laptop ul li {
 	display: inline-block;
-	width: 90px;
-	height: 90px;
+	width: 80px;
+	height: 80px;
 	border-radius: 100px;
 	background-color: #aaa;  
 	margin: 0 3%;
@@ -530,10 +530,10 @@ h2 {
 
 .section.portfolio .laptop .site {
 	position: absolute;
-	height: 450px;
-	width: 810px;
+	height: 150px;
+	width: 730px;
 	margin-top: 40px;
-	left: calc(50% - 405px);	
+	left: calc(50% - 365px);	
   border-radius: 10px;
 }
 
@@ -541,7 +541,7 @@ h2 {
 	position: absolute;
 	overflow: auto;
 	width: 100%;
-	height: 450px;
+	height: 370px;
 }
 
 @media screen and (max-width: 1024px) {
