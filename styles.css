@@ -191,17 +191,17 @@ h2 {
   background-image: url('assets/img/Menu/logo.png');
   background-size: 100% 100%;
   width: 260px;
-  height: 50px;
+  height: 55px;
   display: inline-block;
   float: left;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .menu ul {
   display: inline-block;
   float: right;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-right: 10px;
 }
 
@@ -482,7 +482,7 @@ h2 {
 .section.portfolio h1 {
 	width: 100%;
 	text-align: center;
-	background-color: rgba(200, 47, 48,.85);
+	background-color: #8a2f30;
 	color: #fff;
 	margin-top: 60px;
 	padding: .2em;
