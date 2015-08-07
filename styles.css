@@ -472,11 +472,11 @@ h2 {
   }
 }
 .section.portfolio {
-	height: 1142px;
-	background-image: url('assets/img/Portfolio/logo-desenho.png');
-	background-repeat: no-repeat;
-	background-position: 110% -10%;
-	border: 1px solid #000;
+	height: auto;
+  margin-bottom: 100px;
+  background-image: url('assets/img/Portfolio/logo-desenho.png');
+  background-repeat: no-repeat;
+  background-position: 110% -10%;
 }
 
 .section.portfolio h1 {
@@ -545,10 +545,6 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
-  .section.portfolio {
-    height: 1000px;
-  }
-
 	.section.portfolio .laptop {
     width: 800px;
     height: 483px;
@@ -571,10 +567,6 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-  .section.portfolio {
-    height: 950px;
-  }
-
   .section.portfolio .laptop {
     width: 600px;
     height: 365px;
@@ -628,11 +620,9 @@ h2 {
 }
 
 @media screen and (max-width: 450px) {
-
   .section.portfolio {
     background-size: 400px 400px;
     background-position: 110% -5%;
-    height: 600px;
   }
 
   .section.portfolio .laptop {
