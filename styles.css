@@ -180,7 +180,7 @@ h2 {
   height: 70px;
   background-color: rgba(255,255,255,1);
   color: #842c2e;
-  z-index: 4;
+  z-index: 9999;
 }
 
 .menu h1 {
@@ -689,6 +689,146 @@ h2 {
 @media screen and (min-width: 1025px) {
   .section.frase {
     display: inherit;
+  }
+}
+.section.equipe {
+  background-image: url('assets/img/Equipe/fundo-equipe.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section.equipe .filtroFundo {
+  position: relative;
+  background-color: rgba(64,0,42,.9);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.section.equipe h1 {
+  color: #fff;
+  width: 100%;
+  background-color: #3a0026;
+  text-align: center;
+  padding: .2em;
+  margin-top: 70px;
+  margin-bottom: 1.5em;
+  font-weight: normal;
+}
+
+.section.equipe .membros {
+  margin-bottom: 6em;
+}
+
+.section.equipe .membros ul {
+  display: block;
+  text-align: center;
+}
+
+.section.equipe .membros li {
+  position: relative;
+  width: 155px;
+  height: 155px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin: 1% 2%;
+  transition: transform .3s linear;
+  cursor: pointer;
+}
+
+.section.equipe .membros li:hover {
+  transform: scale(1.15);
+}
+
+
+.section.equipe .membros li:nth-child(1) {
+  background-image: url('assets/img/Equipe/alvaro.jpg');
+}
+
+.section.equipe .membros li:nth-child(2) {
+  background-image: url('assets/img/Equipe/gabriel.jpg');
+}
+
+.section.equipe .membros li:nth-child(3) {
+  background-image: url('assets/img/Equipe/jessica.jpg');
+}
+
+.section.equipe .membros li:nth-child(4) {
+  background-image: url('assets/img/Equipe/joao.jpg');
+}
+
+.section.equipe .membros li:nth-child(5) {
+  background-image: url('assets/img/Equipe/junior.jpg');
+}
+
+.section.equipe span.nomeFuncao {
+  position: absolute;
+  margin-left: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(83,25,63,.65);
+  opacity: 0;
+  transition: opacity .4s linear;
+}
+
+.section.equipe span.nomeFuncao:hover {
+  opacity: 1;
+}
+
+.section.equipe span.nomeFuncao p {
+  font-family: 'AlegreyaSans', Arial , sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0,0,0,.5);
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.section.equipe span.nomeFuncao p:first-child {
+  margin-top: 100px;
+}
+
+.section.equipe div.descricao {
+  padding: 0 4em;
+  margin-bottom: 5em;
+  font-family: 'AlegreyaSans', Arial , sans-serif;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.6);
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  text-align: center;
+  display: block;
+  /* 
+  display: block; //no js só aparace a descrição quando clicar
+  */
+}
+
+.section.equipe div.descricao li {
+  display: none;
+}
+/*
+//No js, ao clicar altera o valor da propriedade 'display' para 'block' do elemento que tiver o id #nomeDoMembro 
+*/
+.section.equipe li#jessica {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .section.equipe .membros li {
+    margin: 2% 2%;
+  }
+
+  .section.equipe div.descricao {
+    padding: 0 2em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section.equipe div.descricao {
+    display: none;
   }
 }
 /* Contatos ----------------------------------------------------------------- */
