@@ -10,7 +10,6 @@
   display: block;
   width: 100%;
   height: 100%;
-  border-top: 1px solid rgba(0,0,0,0);
 }
 
 .section.equipe h1 {
@@ -51,19 +50,19 @@
 
 
 .section.equipe .membros li:nth-child(1) {
-  background-image: url('assets/img/Equipe/jessica.jpg');
-}
-
-.section.equipe .membros li:nth-child(2) {
-  background-image: url('assets/img/Equipe/joao.jpg');
-}
-
-.section.equipe .membros li:nth-child(3) {
   background-image: url('assets/img/Equipe/alvaro.jpg');
 }
 
-.section.equipe .membros li:nth-child(4) {
+.section.equipe .membros li:nth-child(2) {
   background-image: url('assets/img/Equipe/gabriel.jpg');
+}
+
+.section.equipe .membros li:nth-child(3) {
+  background-image: url('assets/img/Equipe/jessica.jpg');
+}
+
+.section.equipe .membros li:nth-child(4) {
+  background-image: url('assets/img/Equipe/joao.jpg');
 }
 
 .section.equipe .membros li:nth-child(5) {
