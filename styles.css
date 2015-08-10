@@ -714,6 +714,7 @@ h2 {
   margin-top: 70px;
   margin-bottom: 1.5em;
   font-weight: normal;
+  border-top: 1px solid rgba(0,0,0,0);
 }
 
 .section.equipe .membros {
@@ -747,7 +748,7 @@ h2 {
 }
 
 .section.equipe .membros li:nth-child(2) {
-  background-image: url('assets/img/Equipe/gabriel.jpg');
+  background-image: url('assets/img/Equipe/gabriel2.jpg');
 }
 
 .section.equipe .membros li:nth-child(3) {
