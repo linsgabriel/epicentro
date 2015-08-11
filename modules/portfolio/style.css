@@ -48,7 +48,7 @@
 	background-color: #aaa;  
 	margin: 0 3%;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	transition: transform .1s linear;
+	/*transition: transform .1s linear;*/
 }
 
 .section.portfolio .laptop ul li:hover {

@@ -521,7 +521,7 @@ h2 {
 	background-color: #aaa;  
 	margin: 0 3%;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	transition: transform .1s linear;
+	/*transition: transform .1s linear;*/
 }
 
 .section.portfolio .laptop ul li:hover {
@@ -699,9 +699,7 @@ h2 {
 }
 
 .section.equipe .filtroFundo {
-  position: relative;
   background-color: rgba(64,0,42,.9);
-  display: block;
   width: 100%;
   height: 100%;
 }
@@ -711,11 +709,11 @@ h2 {
   width: 100%;
   background-color: #3a0026;
   text-align: center;
+  font-weight: normal;
+  border: 1px solid rgba(0,0,0,0);
   padding: .2em;
   margin-top: 70px;
   margin-bottom: 1.5em;
-  font-weight: normal;
-  border-top: 1px solid rgba(0,0,0,0);
 }
 
 .section.equipe .membros {
@@ -735,12 +733,14 @@ h2 {
   background-position: center;
   display: inline-block;
   margin: 1% 2%;
-  transition: transform .3s linear;
+ /* transition: transform .3s linear;
+  -webkit-transition: transform .3s linear;*/
   cursor: pointer;
 }
 
 .section.equipe .membros li:hover {
   transform: scale(1.15);
+  -webkit-transform: scale(1.15);
 }
 
 
@@ -749,7 +749,7 @@ h2 {
 }
 
 .section.equipe .membros li:nth-child(2) {
-  background-image: url('assets/img/Equipe/gabriel2.jpg');
+  background-image: url('assets/img/Equipe/gabriel.jpg');
 }
 
 .section.equipe .membros li:nth-child(3) {
@@ -786,7 +786,7 @@ h2 {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .section.equipe span.nomeFuncao p:first-child {
