@@ -83,6 +83,7 @@
   cursor: pointer;
   font-family: 'AlegreyaSC';
   padding: .5em 1em;
+  letter-spacing: 4px;
 }
 
 .section.contato .form textarea {
