@@ -9,11 +9,13 @@
   float: left;
   font-family: 'AlegreyaSC';
   list-style: none;
+  letter-spacing: 4px;
 }
 
 .section.footer h2 {
   font-family: 'AlegreyaSC';
   font-weight: normal;
+  letter-spacing: 4px;
 }
 
 .section.footer .arial{
