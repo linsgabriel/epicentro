@@ -91,7 +91,7 @@
 
   .section.servicos .postit img {
     height: 25vw;
-    margin: 5vw auto; 
+    margin: 5vw auto;
   }
 
 @media screen and (min-width: 601px) {
@@ -141,13 +141,13 @@
 
   .section.servicos .postit:after {
     left: calc(50% - 0.8vw);
-    padding: 1.4vw;
-    top: -0.8vw;
+    padding: 1vw;
+    top: 0.2vw;
   }
 
   .section.servicos .postit img {
     height: 5vw;
-    margin: 1vw auto .5vw auto;
+    margin: 1.5vw auto .5vw auto;
   }
 
   .section.servicos .postit p {
@@ -157,6 +157,10 @@
 
   .section.servicos .postit.laranja {
     transform: rotate(10deg);
+  }
+
+  .section.servicos .postit.laranja:after {
+    left: rotate(10deg);
   }
 
   .section.servicos .postit.verde {
