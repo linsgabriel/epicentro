@@ -1,5 +1,5 @@
 .section.equipe {
-  background-image: url('assets/img/Equipe/fundo-equipe.jpg');
+  background-image: url('assets/img/Equipe/equipe.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -55,7 +55,7 @@
 }
 
 .section.equipe .membros li:nth-child(2) {
-  background-image: url('assets/img/Equipe/gabriel2.jpg');
+  background-image: url('assets/img/Equipe/gabriel.jpg');
 }
 
 .section.equipe .membros li:nth-child(3) {
