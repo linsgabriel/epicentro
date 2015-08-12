@@ -391,7 +391,7 @@ h2 {
 
   .section.servicos .postit img {
     height: 25vw;
-    margin: 5vw auto; 
+    margin: 5vw auto;
   }
 
 @media screen and (min-width: 601px) {
@@ -441,13 +441,13 @@ h2 {
 
   .section.servicos .postit:after {
     left: calc(50% - 0.8vw);
-    padding: 1.4vw;
-    top: -0.8vw;
+    padding: 1vw;
+    top: 0.2vw;
   }
 
   .section.servicos .postit img {
     height: 5vw;
-    margin: 1vw auto .5vw auto;
+    margin: 1.5vw auto .5vw auto;
   }
 
   .section.servicos .postit p {
@@ -457,6 +457,10 @@ h2 {
 
   .section.servicos .postit.laranja {
     transform: rotate(10deg);
+  }
+
+  .section.servicos .postit.laranja:after {
+    left: rotate(10deg);
   }
 
   .section.servicos .postit.verde {
@@ -912,14 +916,15 @@ h2 {
 }
 
 .section.contato .form input.enviar {
-  background-color: #8a2f31;
-  border: 1px solid #590c00;
-  border-radius: 1em;
+  background-color: #c00;
+  border-radius: 5px;
+  color: #fff;
   color: #fff;
   cursor: pointer;
-  font-family: 'AlegreyaSC';
+  font: 1em 'AlegreyaSC';
+  font-weight: bold;
   padding: .5em 1em;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
 }
 
 .section.contato .form textarea {
@@ -933,14 +938,38 @@ h2 {
   background-color: transparent;
   border: 0;
   bottom: .5em;
-  color: #8a2f31;
+  color: #c00;
   cursor: pointer;
   font-size: 2em;
   position: absolute;
   right: .5em;
 }
 
-.section.contato .mapa {
+.section.contato .map-modal {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.section.contato .map-modal .fechar {
+  background-color: #c00;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  right: 90px;
+  padding: 10px 15px;
+  position: absolute;
+  top: 30px;
+  z-index: 4;
+}
+
+.section.contato .map-modal .mapa {
   height: 100%;
   left: 0;
   position: absolute;
