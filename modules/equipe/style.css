@@ -128,25 +128,11 @@
   /*
   Originalmente estará com "display: none;"
   Ao clicar em determinada foto dispara uma ação no JS
-  que mostrará esse item "display: block;" 
+  que mudará o id acima especificado para o nome do membro.
+  e mostrará esse item com "display: block;" 
   */
 }
 
-.section.equipe li#gabriel {
-  display: none;
-}
-
-.section.equipe li#jessica {
-  display: none;
-}
-
-.section.equipe li#joao { 
-  display: none;
-}
-
-.section.equipe li#junior {
-  display: none;
-}
 
 @media screen and (max-width: 900px) {
   .section.equipe .membros li {
