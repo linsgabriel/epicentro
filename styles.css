@@ -477,6 +477,7 @@ h2 {
 }
 .section.portfolio {
 	height: auto;
+  padding-top: 1px;
   margin-bottom: 100px;
   background-image: url('assets/img/Portfolio/logo-desenho.png');
   background-repeat: no-repeat;
@@ -484,13 +485,14 @@ h2 {
 }
 
 .section.portfolio h1 {
-	width: 100%;
-	text-align: center;
-	background-color: #8a2f30;
-	color: #fff;
-	margin-top: 60px;
-	padding: .2em;
+  text-align: center;
+  background-color: #8a2f30;
+  color: #fff;
   font-weight: normal;
+  width: 100%;
+  padding: .2em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .section.portfolio .laptop {
@@ -525,7 +527,7 @@ h2 {
 	background-color: #aaa;  
 	margin: 0 3%;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	transition: transform .1s linear;
+	/*transition: transform .1s linear;*/
 }
 
 .section.portfolio .laptop ul li:hover {
@@ -700,14 +702,16 @@ h2 {
   background-image: url('assets/img/Equipe/equipe.jpg');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .section.equipe .filtroFundo {
-  position: relative;
+  top: 0;
+  left: 0;
   background-color: rgba(64,0,42,.9);
-  display: block;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .section.equipe h1 {
@@ -715,11 +719,10 @@ h2 {
   width: 100%;
   background-color: #3a0026;
   text-align: center;
-  padding: .2em;
-  margin-top: 70px;
-  margin-bottom: 1.5em;
   font-weight: normal;
-  border-top: 1px solid rgba(0,0,0,0);
+  padding: .2em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .section.equipe .membros {
@@ -739,12 +742,12 @@ h2 {
   background-position: center;
   display: inline-block;
   margin: 1% 2%;
-  transition: transform .3s linear;
   cursor: pointer;
 }
 
 .section.equipe .membros li:hover {
   transform: scale(1.15);
+  -webkit-transform: scale(1.15);
 }
 
 
@@ -790,7 +793,7 @@ h2 {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .section.equipe span.nomeFuncao p:first-child {

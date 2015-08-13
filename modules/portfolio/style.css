@@ -1,5 +1,6 @@
 .section.portfolio {
 	height: auto;
+  padding-top: 1px;
   margin-bottom: 100px;
   background-image: url('assets/img/Portfolio/logo-desenho.png');
   background-repeat: no-repeat;
@@ -7,13 +8,14 @@
 }
 
 .section.portfolio h1 {
-	width: 100%;
-	text-align: center;
-	background-color: #8a2f30;
-	color: #fff;
-	margin-top: 60px;
-	padding: .2em;
+  text-align: center;
+  background-color: #8a2f30;
+  color: #fff;
   font-weight: normal;
+  width: 100%;
+  padding: .2em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .section.portfolio .laptop {
@@ -48,7 +50,7 @@
 	background-color: #aaa;  
 	margin: 0 3%;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	transition: transform .1s linear;
+	/*transition: transform .1s linear;*/
 }
 
 .section.portfolio .laptop ul li:hover {
