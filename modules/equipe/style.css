@@ -2,12 +2,16 @@
   background-image: url('assets/img/Equipe/fundo-equipe.jpg');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .section.equipe .filtroFundo {
+  top: 0;
+  left: 0;
   background-color: rgba(64,0,42,.9);
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .section.equipe h1 {
@@ -16,9 +20,9 @@
   background-color: #3a0026;
   text-align: center;
   font-weight: normal;
-  border: 1px solid rgba(0,0,0,0);
   padding: .2em;
   margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .section.equipe .membros {
@@ -38,8 +42,6 @@
   background-position: center;
   display: inline-block;
   margin: 1% 2%;
-  transition: transform .3s linear;
-  -webkit-transition: transform .3s linear;
   cursor: pointer;
 }
 

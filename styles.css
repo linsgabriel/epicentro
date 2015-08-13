@@ -477,6 +477,7 @@ h2 {
 }
 .section.portfolio {
 	height: auto;
+  padding-top: 1px;
   margin-bottom: 100px;
   background-image: url('assets/img/Portfolio/logo-desenho.png');
   background-repeat: no-repeat;
@@ -484,13 +485,14 @@ h2 {
 }
 
 .section.portfolio h1 {
-	width: 100%;
-	text-align: center;
-	background-color: #8a2f30;
-	color: #fff;
-	margin-top: 60px;
-	padding: .2em;
+  text-align: center;
+  background-color: #8a2f30;
+  color: #fff;
   font-weight: normal;
+  width: 100%;
+  padding: .2em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .section.portfolio .laptop {
@@ -700,12 +702,16 @@ h2 {
   background-image: url('assets/img/Equipe/fundo-equipe.jpg');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .section.equipe .filtroFundo {
+  top: 0;
+  left: 0;
   background-color: rgba(64,0,42,.9);
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .section.equipe h1 {
@@ -714,9 +720,9 @@ h2 {
   background-color: #3a0026;
   text-align: center;
   font-weight: normal;
-  border: 1px solid rgba(0,0,0,0);
   padding: .2em;
   margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .section.equipe .membros {
@@ -736,8 +742,6 @@ h2 {
   background-position: center;
   display: inline-block;
   margin: 1% 2%;
-  transition: transform .3s linear;
-  -webkit-transition: transform .3s linear;
   cursor: pointer;
 }
 
