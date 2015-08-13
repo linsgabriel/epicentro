@@ -818,13 +818,13 @@ h2 {
 
 .section.equipe div.descricao li {
   display: none;
+  line-height: 30px;
 }
 /*
 //No js, ao clicar altera o valor da propriedade 'display' para 'block' do elemento que tiver o id #nomeDoMembro 
 */
 .section.equipe li#jessica {
   display: block;
-  line-height: 30px;
 }
 
 @media screen and (max-width: 900px) {
@@ -841,8 +841,7 @@ h2 {
   .section.equipe div.descricao {
     display: none;
   }
-}
-/* Contatos ----------------------------------------------------------------- */
+}/* Contatos ----------------------------------------------------------------- */
 
 /* Resolução 320px - 600px */
 

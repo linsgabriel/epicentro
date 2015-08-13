@@ -112,20 +112,27 @@
   text-align: center;
   display: block;
   /* 
-  display: block; //no js só aparace a descrição quando clicar
+  Originalmente estará com "display: none;" 
+  Qdo clicar na foto dispara uma ação no JS
+  que mostrará essa div "display: block;"
   */
 }
 
 .section.equipe div.descricao li {
   display: none;
-}
-/*
-//No js, ao clicar altera o valor da propriedade 'display' para 'block' do elemento que tiver o id #nomeDoMembro 
-*/
-.section.equipe li#jessica {
-  display: block;
   line-height: 30px;
 }
+
+.section.equipe li#alvaro {
+  display: block;
+  /*
+  Originalmente estará com "display: none;"
+  Ao clicar em determinada foto dispara uma ação no JS
+  que mudará o id acima especificado para o nome do membro.
+  e mostrará esse item com "display: block;" 
+  */
+}
+
 
 @media screen and (max-width: 900px) {
   .section.equipe .membros li {
