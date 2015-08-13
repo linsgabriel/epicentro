@@ -669,7 +669,7 @@ h2 {
   background-attachment: fixed;
   background-position: center;
   display: none;
-  min-height: 50vw;
+  min-height: 80vw;
   position: relative;
 }
 
@@ -682,7 +682,7 @@ h2 {
   padding: 5vw;
   position: absolute;
   text-align: center;
-  top: calc(50% - 4em);
+  top: calc(50% - 7em);
   width: 100%;
   letter-spacing: 4px;
 }
@@ -812,7 +812,9 @@ h2 {
   text-align: center;
   display: block;
   /* 
-  display: block; //no js só aparace a descrição quando clicar
+  Originalmente estará com "display: none;" 
+  Qdo clicar na foto dispara uma ação no JS
+  que mostrará essa div "display: block;"
   */
 }
 
@@ -820,12 +822,17 @@ h2 {
   display: none;
   line-height: 30px;
 }
-/*
-//No js, ao clicar altera o valor da propriedade 'display' para 'block' do elemento que tiver o id #nomeDoMembro 
-*/
-.section.equipe li#jessica {
+
+.section.equipe li#alvaro {
   display: block;
+  /*
+  Originalmente estará com "display: none;"
+  Ao clicar em determinada foto dispara uma ação no JS
+  que mudará o id acima especificado para o nome do membro.
+  e mostrará esse item com "display: block;" 
+  */
 }
+
 
 @media screen and (max-width: 900px) {
   .section.equipe .membros li {
