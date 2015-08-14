@@ -51,10 +51,53 @@
 	margin: 0 3%;
 	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 	/*transition: transform .1s linear;*/
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
 }
 
 .section.portfolio .laptop ul li:hover {
 	transform: translateY(-10px);
+}
+
+.section.portfolio .laptop ul li:nth-child(1) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(2) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(3) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(4) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(5) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(6) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(7) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(8) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(9) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(10) {
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop .site {
