@@ -147,7 +147,6 @@ h2 {
   }
 }
 
-
 @media screen and (min-width: 1025px) {
 
   .jumbotron .frases p {
@@ -160,10 +159,6 @@ h2 {
     bottom: 2vw;
     font-size: 1.2vw;
   }
-}
-
-.menu {
-  display: none;
 }
 /*------------- CSS Menu -------------------*/
 .menu {
