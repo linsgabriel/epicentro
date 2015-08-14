@@ -62,7 +62,6 @@
   display: inline-block;
   padding-right: .5em;
   text-align: right;
-  width: 20%;
 }
 
 .section.contato .form input {
@@ -72,7 +71,7 @@
 
 .section.contato .form input.input {
   display: inline-block;
-  width: 80%;
+  width: 100%;
 }
 
 .section.contato .form input.enviar {
