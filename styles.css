@@ -102,7 +102,7 @@ h2 {
 
 .jumbotron .frases p.active {
   display: inherit;
-  letter-spacing: 4px;
+  /*letter-spacing: 4px;*/
 }
 
 .jumbotron .telefone {
@@ -117,14 +117,14 @@ h2 {
 /* Resolução 320px - 600px */
 
   .jumbotron .frases {
-    left: calc(50% - 45vw);
-    max-width: 90vw;
+    width: 100%;
     top: 40%;
   }
 
   .jumbotron .frases p {
     display: none;
-    font-size: 5vw;
+    font-size: 4vw;
+    letter-spacing: 2px;
   }
 
   .jumbotron .telefone {
@@ -135,15 +135,10 @@ h2 {
 
 @media screen and (min-width: 601px) {
 
-  .jumbotron .frases {
-    left: calc(50% - 30vw);
-    max-width: 60vw;
-    top: 40%;
-  }
-
   .jumbotron .frases p {
     display: none;
     font-size: 2.5vw;
+    letter-spacing: 4px;
   }
 
   .jumbotron .telefone {
@@ -155,21 +150,20 @@ h2 {
 
 @media screen and (min-width: 1025px) {
 
-  .jumbotron .frases {
-    left: calc(50% - 25vw);
-    max-width: 50vw;
-    top: 50%;
-  }
-
   .jumbotron .frases p {
     display: none;
-    font-size: 1.6vw;
+    font-size: 1.8vw;
+    letter-spacing: 4px;
   }
 
   .jumbotron .telefone {
     bottom: 2vw;
     font-size: 1.2vw;
   }
+}
+
+.menu {
+  display: none;
 }
 /*------------- CSS Menu -------------------*/
 .menu {
@@ -538,23 +532,43 @@ h2 {
 }
 
 .section.portfolio .laptop ul li:nth-child(1) {
-  background-image: url('assets/img/Portfolio/iconeAvante.png');
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop ul li:nth-child(2) {
-  background-image: url('assets/img/Portfolio/iconeDomus.png');
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop ul li:nth-child(3) {
-  background-image: url('assets/img/Portfolio/iconePizzaria.png');
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop ul li:nth-child(4) {
-  background-image: url('assets/img/Portfolio/iconeDescubra.png');
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop ul li:nth-child(5) {
-  background-image: url('assets/img/Portfolio/iconeMaca.png');
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(6) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(7) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(8) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(9) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(10) {
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop .site {
