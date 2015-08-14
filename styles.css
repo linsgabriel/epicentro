@@ -1158,6 +1158,10 @@ h2 {
     width: auto;
   }
 
+  .section.footer .redes .last {
+    margin-right: 5vw;
+  }
+
   .section.footer .contatos {
     font-size: 1.3em;
     line-height: 1;
@@ -1196,6 +1200,10 @@ h2 {
 
   .section.footer .redes {
     width: calc(50% - 4em);
+  }
+
+  .section.footer .redes .last {
+    margin-right: 4vw;
   }
 
   .section.footer .contatos {
