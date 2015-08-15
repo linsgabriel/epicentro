@@ -318,12 +318,16 @@ h2 {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, .5), inset 1px 1px 0 rgba(255, 255, 255, .2), inset -1px -1px 0 rgba(0, 0, 0, .1);
   text-align: center;
   position: relative;
+  height: 320px;
 }
 
 .section.servicos .postit:after {
-  background-color: rgb(101, 58, 1);
+/*  background-color: rgb(101, 58, 1);
   background: radial-gradient(ellipse at center, rgb(181, 108, 30) 5%, rgb(191, 118, 40) 40%, rgb(171, 98, 20) 60%, rgb(101, 58, 1) 100%);
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .5), inset -1px -1px 1px rgba(255, 255, 255, .3);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .5), inset -1px -1px 1px rgba(255, 255, 255, .3);*/
+  background-image: url('assets/img/Servicos/percevejo.png');
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+  background-position: -1px -1px;
   border-radius: 50%;
   content: '';
   position: absolute;
@@ -538,23 +542,43 @@ h2 {
 }
 
 .section.portfolio .laptop ul li:nth-child(1) {
-  background-image: url('assets/img/Portfolio/iconeAvante.png');
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop ul li:nth-child(2) {
-  background-image: url('assets/img/Portfolio/iconeDomus.png');
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop ul li:nth-child(3) {
-  background-image: url('assets/img/Portfolio/iconePizzaria.png');
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop ul li:nth-child(4) {
-  background-image: url('assets/img/Portfolio/iconeDescubra.png');
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop ul li:nth-child(5) {
-  background-image: url('assets/img/Portfolio/iconeMaca.png');
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(6) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(7) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(8) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(9) {
+  background-image: url('assets/img/Portfolio/#');
+}
+
+.section.portfolio .laptop ul li:nth-child(10) {
+  background-image: url('assets/img/Portfolio/#');
 }
 
 .section.portfolio .laptop .site {
