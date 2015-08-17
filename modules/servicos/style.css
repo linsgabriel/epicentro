@@ -1,6 +1,10 @@
 
 /* Serviços ----------------------------------------------------------------- */
 
+.section.servicos {
+  text-align: center;
+}
+
 .section.servicos h1 {
   background-color: rgba(255, 255, 255, 1);
   font-weight: normal;
@@ -69,20 +73,20 @@
 
   .section.servicos {
     background: #ccc url('assets/img/Servicos/curtica.jpg');
-    padding: 15vw 0 15vw 5vw;
+    padding: 100px 0 15vw 5vw;
     position: relative;
   }
 
   .section.servicos .postit {
-    margin: 15vw 5vw 0 0;
-    padding: 5vw;
-    width: calc(100% - 3vw);
+    margin: 30px 30px 0 0;
+    padding: 15px;
+    width: 230px;
   }
 
   .section.servicos .postit:after {
-    left: calc(50% - 3.5vw);
-    padding: 5vw;
-    top: -3vw;
+    left: calc(50% - 15px/2);
+    padding: 15px;
+    top: 10px;
   }
 
   .section.servicos h1 {
@@ -94,13 +98,13 @@
   }
 
   .section.servicos .postit img {
-    height: 25vw;
-    margin: 5vw auto;
+    height: 70px;
+    margin: 30px auto 5px auto;
   }
 
 @media screen and (min-width: 601px) {
   .section.servicos {
-    padding: 15vw 0 10vw 5vw;
+    padding: 10vw 0 10vw 5vw;
   }
 
   .section.servicos h1 {
@@ -110,26 +114,26 @@
 
   .section.servicos .postit {
     margin: 10vw 5vw 0 0;
-    padding: 5vw;
-    width: calc(50% - 5.5vw);
+    padding: 15px;
+    width: 230px;
   }
 
   .section.servicos .postit:after {
-    left: calc(50% - 1.5vw);
-    padding: 3vw;
-    top: -1.5vw;
+    left: calc(50% - 15px/2);
+    padding: 15px;
+    top: 10px;
   }
 
   .section.servicos .postit img {
-    height: 13vw;
-    margin: 2vw auto;
+    height: 70px;
+    margin: 30px auto 5px auto;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .section.servicos {
     background-color: rgba(255, 255, 255, 1);
-    padding: 16vw 0 10vw 2vw;
+    padding: 16vw 0 7vw 0;
     position: relative;
   }
 
@@ -140,18 +144,18 @@
   .section.servicos .postit {
     margin: 3vw 2vw 0 0;
     padding: 1vw;
-    width: calc(20% - 2.4vw);
+    width: 230px;
   }
 
   .section.servicos .postit:after {
-    left: calc(50% - 0.8vw);
-    padding: 1vw;
-    top: 0.2vw;
+    left: calc(50% - 15px/2);
+    padding: 15px;
+    top: 10px;
   }
 
   .section.servicos .postit img {
     height: 5vw;
-    margin: 1.5vw auto .5vw auto;
+    margin: 30px auto 5px auto;
   }
 
   .section.servicos .postit p {
@@ -178,4 +182,8 @@
   .section.servicos .postit.rosa {
     transform: rotate(-10deg);
   }
+}
+
+.menu {
+  display: none;
 }
