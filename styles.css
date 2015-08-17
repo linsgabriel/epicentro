@@ -311,12 +311,16 @@ h2 {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, .5), inset 1px 1px 0 rgba(255, 255, 255, .2), inset -1px -1px 0 rgba(0, 0, 0, .1);
   text-align: center;
   position: relative;
+  height: 320px;
 }
 
 .section.servicos .postit:after {
-  background-color: rgb(101, 58, 1);
+/*  background-color: rgb(101, 58, 1);
   background: radial-gradient(ellipse at center, rgb(181, 108, 30) 5%, rgb(191, 118, 40) 40%, rgb(171, 98, 20) 60%, rgb(101, 58, 1) 100%);
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .5), inset -1px -1px 1px rgba(255, 255, 255, .3);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .5), inset -1px -1px 1px rgba(255, 255, 255, .3);*/
+  background-image: url('assets/img/Servicos/percevejo.png');
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+  background-position: -1px -1px;
   border-radius: 50%;
   content: '';
   position: absolute;
