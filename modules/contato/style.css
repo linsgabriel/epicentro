@@ -62,7 +62,6 @@
   display: inline-block;
   padding-right: .5em;
   text-align: right;
-  width: 20%;
 }
 
 .section.contato .form input {
@@ -72,7 +71,7 @@
 
 .section.contato .form input.input {
   display: inline-block;
-  width: 80%;
+  width: 100%;
 }
 
 .section.contato .form input.enviar {
@@ -88,7 +87,7 @@
 }
 
 .section.contato .form textarea {
-  min-height: 50vw;
+  min-height: 100px;
   padding: .5em;
   resize: vertical;
   width: 100%;
@@ -158,7 +157,7 @@
   }
 
   .section.contato .form textarea {
-    min-height: 30vh;
+    min-height: 100px;
   }
 }
 
