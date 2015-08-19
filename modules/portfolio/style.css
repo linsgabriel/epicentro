@@ -1,10 +1,13 @@
 .section.portfolio {
-	height: auto;
+  height: auto;
   padding-top: 1px;
   margin-bottom: 100px;
   background-image: url('assets/img/Portfolio/logo-desenho.png');
   background-repeat: no-repeat;
   background-position: 110% -10%;
+  font-size: 5em;
+  font-weight: bolder;
+  color: rgba(0,0,0,.75); 
 }
 
 .section.portfolio h1 {
@@ -18,211 +21,296 @@
   margin-top: 1.5em;
 }
 
-.section.portfolio .laptop {
-	background-image: url('assets/img/Portfolio/laptop.png');
-	background-size: 100% 100%;
-	width: 924px;
-	max-width: 100%;
-	height: 523px;
-	margin: auto;
-	margin-top: 200px;
+.section.portfolio .ancoraSite {
+  width: 550px;
+  height: 100px;
+  margin-left: 50%; 
+  transform: translateX(-50%); 
+  overflow: hidden;
 }
 
-.section.portfolio .laptop .ancoraSite {
-	position: absolute;
-	height: 70px;
-	width: 790px;
-	margin-top: -100px;
-	left: calc(50% - 395px);	
+.section.portfolio .nav-left {
+  display: inline-block;
+  position: absolute;
+  left: 20vw;
 }
 
-.section.portfolio .laptop ul {
-	width: 100%;
-	height: 100%;
-	text-align: center;
+.section.portfolio .nav-right {
+  display: inline-block;
+  position: absolute;
+  right: 20vw;
+  margin-top: -100px;
 }
 
-.section.portfolio .laptop ul li {
-	display: inline-block;
-	width: 80px;
-	height: 80px;
-	border-radius: 100px;
-	background-color: #aaa;  
-	margin: 0 3%;
-	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	/*transition: transform .1s linear;*/
+.section.portfolio ul {
+  min-width: 200%;
+  text-align: center;
+  margin: auto;
+  transition: transform .8s linear;
+  overflow: hidden;
+}
+
+.section.portfolio ul:hover {
+  transform: translateX(-50%);
+} 
+
+.section.portfolio ul li {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: #aaa;  
+  margin: 0 .2vw;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+  transition: opacity .4s linear;
   background-size: cover;
   background-position: center;
   cursor: pointer;
 }
 
-.section.portfolio .laptop ul li:hover {
-	transform: translateY(-10px);
+.section.portfolio ul li:hover {
+  opacity: .7;
 }
 
-.section.portfolio .laptop ul li:nth-child(1) {
-  background-image: url('assets/img/Portfolio/#');
+.section.portfolio ul li:nth-child(1) {
+  background-image: url('assets/img/Portfolio/iconeAvante.png');
 }
 
-.section.portfolio .laptop ul li:nth-child(2) {
-  background-image: url('assets/img/Portfolio/#');
+.section.portfolio ul li:nth-child(2) {
+  background-image: url('assets/img/Portfolio/iconeDomus.png');
 }
 
-.section.portfolio .laptop ul li:nth-child(3) {
-  background-image: url('assets/img/Portfolio/#');
+.section.portfolio ul li:nth-child(3) {
+  background-image: url('assets/img/Portfolio/iconePizzaria.png');
 }
 
-.section.portfolio .laptop ul li:nth-child(4) {
-  background-image: url('assets/img/Portfolio/#');
+.section.portfolio ul li:nth-child(4) {
+  background-image: url('assets/img/Portfolio/iconeDescubra.png');
 }
 
-.section.portfolio .laptop ul li:nth-child(5) {
-  background-image: url('assets/img/Portfolio/#');
+.section.portfolio ul li:nth-child(5) {
+  background-image: url('assets/img/Portfolio/iconeVilago.jpg');
 }
 
-.section.portfolio .laptop ul li:nth-child(6) {
-  background-image: url('assets/img/Portfolio/#');
+.section.portfolio ul li:nth-child(6) {
+  background-image: url('assets/img/Portfolio/iconeRaddar.jpg');
 }
 
-.section.portfolio .laptop ul li:nth-child(7) {
-  background-image: url('assets/img/Portfolio/#');
+.section.portfolio ul li:nth-child(7) {
+  background-image: url('assets/img/Portfolio/iconeMaca.png');
 }
 
-.section.portfolio .laptop ul li:nth-child(8) {
-  background-image: url('assets/img/Portfolio/#');
+.section.portfolio ul li:nth-child(8) {
+  background-image: url('assets/img/Portfolio/iconePapillon.jpg');
 }
 
-.section.portfolio .laptop ul li:nth-child(9) {
-  background-image: url('assets/img/Portfolio/#');
+.section.portfolio ul li:nth-child(9) {
+  background-image: url('assets/img/Portfolio/iconePrevent.jpg');
 }
 
-.section.portfolio .laptop ul li:nth-child(10) {
-  background-image: url('assets/img/Portfolio/#');
+.section.portfolio ul li:nth-child(10) {
+  background-image: url('assets/img/Portfolio/iconeApeve.jpg');
 }
 
-.section.portfolio .laptop .site {
-	position: absolute;
-	height: 150px;
-	width: 730px;
-	margin-top: 40px;
-	left: calc(50% - 365px);	
+.section.portfolio .laptop {
+  background-image: url('assets/img/Portfolio/laptop.png');
+  background-size: 100% 100%;
+  width: 924px;
+  max-width: 100%;
+  height: 523px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.section.portfolio .laptop .siteTela {
+  position: absolute;
+  height: 150px;
+  width: 730px;
+  margin-top: 40px;
+  left: 50%;
+  transform: translateX(-50%); 
   border-radius: 10px;
 }
 
-.portfolio .laptop .site .siteFull {
-	position: absolute;
-	overflow: auto;
-	width: 100%;
-	height: 370px;
+.section.portfolio .laptop .siteFull {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 370px;
 }
 
+@media screen and (max-width: 1150px) {
+  .section.portfolio .nav-left {
+    left: 16vw;
+  } 
+
+  .section.portfolio .nav-right {
+    right: 16vw;
+  }
+} 
+
 @media screen and (max-width: 1024px) {
-	.section.portfolio .laptop {
-    width: 800px;
-    height: 483px;
+  .section.portfolio .nav-left {
+    left: 12vw;
+  } 
+
+  .section.portfolio .nav-right {
+    right: 12vw;
   }
 
-  .section.portfolio .laptop ul li {
+  .section.portfolio .laptop .siteTela {
+    width: 740px;
+  }
+
+  .section.portfolio .laptop .siteFull {
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .section.portfolio .nav-left {
+    left: 8vw;
+  } 
+
+  .section.portfolio .nav-right {
+    right: 8vw;
+  }
+
+  .section.portfolio ul li {
     width: 70px;
     height: 70px;
   }
 
-  .section.portfolio .laptop .site {
-    width: 640px;
-    height: 340px;
-    left: calc(50% - 320px);
+  .section.portfolio .laptop {
+    width: 800px;
+    height: 486px;
   }
 
-  .portfolio .laptop .site .siteFull {
-    height: 340px;
+  .section.portfolio .ancoraSite {
+    width: 470px;
   }
+
+  .section.portfolio .laptop .siteTela {
+    width: 640px;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
-  .section.portfolio .laptop {
-    width: 600px;
-    height: 365px;
-    margin-top: 150px;
-  }
-
-  .section.portfolio .laptop .ancoraSite {
-    height: auto;
-    width: 600px;
-    left: calc(50% - 300px);
-  }
-
-  .section.portfolio .laptop .site {
-    width: 480px;
-    height: 265px;
-    left: calc(50% - 240px);
-    margin-top: 20px;
-  }
-
-  .portfolio .laptop .site .siteFull {
-    height: 265px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .section.portfolio .laptop {
-    width: 450px;
-    height: 273px;
-  }
-
-  .section.portfolio .laptop .ancoraSite {
-    width: 400px;
-    left: calc(50% - 200px);
-  }
-
-  .section.portfolio .laptop ul li {
-    width: 50px;
-    height: 50px;
-  }
-
-  .section.portfolio .laptop .site {
-    width: 360px;
-    height: 150px;
-    left: calc(50% - 180px);
-    margin-top: 20px;
-  }
-
-  .portfolio .laptop .site .siteFull {
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 450px) {
   .section.portfolio {
     background-size: 400px 400px;
     background-position: 110% -5%;
   }
 
+  .section.portfolio .nav-left {
+    left: 7vw;
+  } 
+
+  .section.portfolio .nav-right {
+    right: 7vw;
+  }
+
+  .section.portfolio ul li {
+    width: 60px;
+    height: 60px;
+  }
+
+  .section.portfolio .ancoraSite {
+    width: 410px;
+  }
+
+  .section.portfolio .laptop {
+    width: 600px;
+    height: 365px;
+  }
+
+  .section.portfolio .laptop .siteTela {
+    width: 480px;
+    height: 260px;
+    margin-top: 30px;
+  }
+
+  .section.portfolio .laptop .siteFull {
+    height: 260px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .section.portfolio {
+    font-size: 3em;
+  }
+
+  .section.portfolio .nav-left {
+    left: 3vw;
+  } 
+
+  .section.portfolio .nav-right {
+    right: 3vw;
+    margin-top: -70px;
+  }
+
+  .section.portfolio ul li {
+    width: 50px;
+    height: 50px;
+    margin: 0 .1vw;
+  }
+
+  .section.portfolio .ancoraSite {
+    width: 315px;
+    height: 70px;
+  }
+
+  .section.portfolio .laptop {
+    width: 450px;
+    height: 273px;
+  }
+
+  .section.portfolio .laptop .siteTela {
+    width: 360px;
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  .section.portfolio .laptop .siteFull {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .section.portfolio .laptop {
     width: 320px;
     height: 194px;
   }
 
-  .section.portfolio .laptop .ancoraSite {
-    max-width: 100%;
-    width: 320px;
-    left: calc(50% - 160px);
+  .section.portfolio .nav-left {
+    left: 1vw;
+  } 
+
+  .section.portfolio .nav-right {
+    right: 1vw;
   }
 
-  .section.portfolio .laptop ul li {
+  .section.portfolio .ancoraSite {
+    width: 265px;
+  }
+
+  .section.portfolio ul {
+    width: 200%;
+  }
+
+  .section.portfolio ul li {
     width: 40px;
     height: 40px;
-    margin-top: 40px;
   }
 
-  .section.portfolio .laptop .site {
+  .section.portfolio .laptop .siteTela {
     width: 260px;
-    left: calc(50% - 130px);
     height: 140px;
     margin-top: 10px;
   }
 
-  .portfolio .laptop .site .siteFull {
+  .section.portfolio .laptop .siteFull {
     height: 140px;
   }
 }
-
