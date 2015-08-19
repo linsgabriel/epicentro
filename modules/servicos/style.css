@@ -73,7 +73,7 @@
 
   .section.servicos {
     background: #ccc url('assets/img/Servicos/curtica.jpg');
-    padding: 100px 0 15vw 5vw;
+    padding: 100px 0 100px 5vw;
     position: relative;
   }
 
@@ -104,7 +104,7 @@
 
 @media screen and (min-width: 601px) {
   .section.servicos {
-    padding: 10vw 0 10vw 5vw;
+    padding: 200px 0 100px 5vw;
   }
 
   .section.servicos h1 {
@@ -133,7 +133,7 @@
 @media screen and (min-width: 1025px) {
   .section.servicos {
     background-color: rgba(255, 255, 255, 1);
-    padding: 16vw 0 7vw 0;
+    padding: 200px 0 100px 0;
     position: relative;
   }
 
@@ -154,7 +154,7 @@
   }
 
   .section.servicos .postit img {
-    height: 5vw;
+    height: 70px;
     margin: 30px auto 5px auto;
   }
 
