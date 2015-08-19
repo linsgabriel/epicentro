@@ -7,7 +7,7 @@
   background-attachment: fixed;
   background-position: center;
   display: none;
-  min-height: 80vw;
+  min-height: 100vw;
   position: relative;
 }
 
@@ -20,7 +20,7 @@
   padding: 5vw;
   position: absolute;
   text-align: center;
-  top: calc(50% - 7em);
+  top: calc(45% - 7em);
   width: 100%;
   letter-spacing: 4px;
 }
