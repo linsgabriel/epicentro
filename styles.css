@@ -472,10 +472,6 @@ h2 {
     transform: rotate(-10deg);
   }
 }
-
-.menu {
-  display: none;
-}
 .section.portfolio {
   height: auto;
   padding-top: 1px;
