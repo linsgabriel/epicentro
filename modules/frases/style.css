@@ -7,8 +7,6 @@
   background-attachment: fixed;
   background-position: center;
   display: none;
-  min-height: 100vw;
-  position: relative;
 }
 
 .section.frase p {
@@ -17,6 +15,7 @@
   font: 2em 'AlegreyaSC';
   font-weight: normal;
   left: 0;
+  margin-top: 100px;
   padding: 5vw;
   position: absolute;
   text-align: center;

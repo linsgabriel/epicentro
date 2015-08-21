@@ -35,9 +35,21 @@ img {
   max-width: 100%;
 }
 
-h1 {
-  font-family: 'AlegreyaSC', Arial, sans-serif;
-  font-size: 50px;
+.section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 3;
+  padding: 30px 0 60px 0;
+}
+
+.section h1 {
+  padding: .2em;
+  font: 50px 'AlegreyaSC', Arial, sans-serif;
+  font-weight: normal;
+  width: 100%;
+  margin-top: .2em;
+  text-align: center;
 }
 
 h2 {
@@ -61,6 +73,15 @@ h2 {
   display: block;
 }
 
+@media screen and (max-width: 450px) {
+  .section {
+    padding-bottom: 30px;
+  }
+
+  .section h1 {
+    font: 30px 'AlegreyaSC', Arial, sans-serif;
+  }
+}
 /* Jumbotron ---------------------------------------------------------------- */
 
 .jumbotron {
@@ -68,7 +89,6 @@ h2 {
   font-family: 'AlegreyaSans';
   max-height: 100vh;
   overflow-y: hidden;
-  position: relative;
   z-index: 2;
 }
 
@@ -118,7 +138,7 @@ h2 {
 
   .jumbotron .frases {
     width: 100%;
-    top: 40%;
+    top: 10%;
   }
 
   .jumbotron .frases p {
@@ -134,10 +154,13 @@ h2 {
 
 
 @media screen and (min-width: 601px) {
+  .jumbotron .frases {
+    top: 25%;
+  }
 
   .jumbotron .frases p {
     display: none;
-    font-size: 2.5vw;
+    font-size: 3vw;
     letter-spacing: 4px;
   }
 
@@ -169,7 +192,7 @@ h2 {
   height: 70px;
   background-color: rgba(255,255,255,1);
   color: #842c2e;
-  z-index: 9999;
+  z-index: 4;
 }
 
 .menu h1 {
@@ -188,7 +211,8 @@ h2 {
 }
 
 .menu ul {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: none;
   float: right;
   margin-top: 10px;
   margin-right: 10px;
@@ -246,7 +270,7 @@ h2 {
   }
 
   .menu ul {
-    display: block;
+    /*display: block;*/
     width: 100%;
     margin: 0;
     text-align: center;
@@ -289,20 +313,13 @@ h2 {
 }
 
 /* Serviços ----------------------------------------------------------------- */
-
 .section.servicos {
   text-align: center;
 }
 
 .section.servicos h1 {
   background-color: rgba(255, 255, 255, 1);
-  font-weight: normal;
-  left: 0;
-  padding: .2em;
-  position: absolute;
-  text-align: center;
-  top: 4vw;
-  width: 100%;
+  color: #000;
 }
 
 .section.servicos .postit {
@@ -312,12 +329,10 @@ h2 {
   text-align: center;
   position: relative;
   height: 320px;
+  text-align: center;
 }
 
 .section.servicos .postit:after {
-/*  background-color: rgb(101, 58, 1);
-  background: radial-gradient(ellipse at center, rgb(181, 108, 30) 5%, rgb(191, 118, 40) 40%, rgb(171, 98, 20) 60%, rgb(101, 58, 1) 100%);
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .5), inset -1px -1px 1px rgba(255, 255, 255, .3);*/
   background-image: url('assets/img/Servicos/percevejo.png');
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
   background-position: -1px -1px;
@@ -362,7 +377,6 @@ h2 {
 
   .section.servicos {
     background: #ccc url('assets/img/Servicos/curtica.jpg');
-    padding: 100px 0 100px 5vw;
     position: relative;
   }
 
@@ -378,10 +392,6 @@ h2 {
     top: 10px;
   }
 
-  .section.servicos h1 {
-    font-size: 2em;
-  }
-
   .section.servicos .postit p {
     margin: 0;
   }
@@ -392,17 +402,9 @@ h2 {
   }
 
 @media screen and (min-width: 601px) {
-  .section.servicos {
-    padding: 200px 0 100px 5vw;
-  }
-
-  .section.servicos h1 {
-    background-color: rgba(255, 255, 255, 1);
-    font-size: 2.5em;
-  }
 
   .section.servicos .postit {
-    margin: 10vw 5vw 0 0;
+    margin: 10vw 1vw 0 1vw;
     padding: 15px;
     width: 230px;
   }
@@ -422,16 +424,10 @@ h2 {
 @media screen and (min-width: 1025px) {
   .section.servicos {
     background-color: rgba(255, 255, 255, 1);
-    padding: 200px 0 100px 0;
-    position: relative;
-  }
-
-  .section.servicos h1 {
-    font-size: 2.7em;
   }
 
   .section.servicos .postit {
-    margin: 3vw 2vw 0 0;
+    margin: 3vw 1vw 0 1vw;
     padding: 1vw;
     width: 230px;
   }
@@ -473,31 +469,22 @@ h2 {
   }
 }
 .section.portfolio {
-  height: auto;
-  padding-top: 1px;
-  margin-bottom: 100px;
   background-image: url('assets/img/Portfolio/logo-desenho.png');
   background-repeat: no-repeat;
   background-position: 110% -10%;
-  font-size: 5em;
   font-weight: bolder;
-  color: rgba(0,0,0,.75); 
+  font-size: 100px;
 }
 
 .section.portfolio h1 {
-  text-align: center;
   background-color: #8a2f30;
   color: #fff;
-  font-weight: normal;
-  width: 100%;
-  padding: .2em;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
 }
 
 .section.portfolio .ancoraSite {
   width: 550px;
   height: 100px;
+  margin-top: 70px;
   margin-left: 50%; 
   transform: translateX(-50%); 
   overflow: hidden;
@@ -507,6 +494,7 @@ h2 {
   display: inline-block;
   position: absolute;
   left: 20vw;
+  margin-top: 70px;
 }
 
 .section.portfolio .nav-right {
@@ -796,8 +784,6 @@ h2 {
   background-attachment: fixed;
   background-position: center;
   display: none;
-  min-height: 100vw;
-  position: relative;
 }
 
 .section.frase p {
@@ -806,6 +792,8 @@ h2 {
   font: 2em 'AlegreyaSC';
   font-weight: normal;
   left: 0;
+  margin-top: 100px;
+  margin-bottom: 500px;
   padding: 5vw;
   position: absolute;
   text-align: center;
@@ -832,24 +820,20 @@ h2 {
   overflow: hidden;
 }
 
-.section.equipe .filtroFundo {
+.section.equipe:after {
+  content: '';
   top: 0;
   left: 0;
   background-color: rgba(64,0,42,.9);
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  position: absolute;
+  z-index: -1;
 }
 
 .section.equipe h1 {
   color: #fff;
-  width: 100%;
   background-color: #3a0026;
-  text-align: center;
-  font-weight: normal;
-  padding: .2em;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
 }
 
 .section.equipe .membros {
@@ -859,6 +843,7 @@ h2 {
 .section.equipe .membros ul {
   display: block;
   text-align: center;
+  margin-top: 50px;
 }
 
 .section.equipe .membros li {
@@ -929,7 +914,6 @@ h2 {
 
 .section.equipe div.descricao {
   padding: 0 4em;
-  margin-bottom: 5em;
   font-family: 'AlegreyaSans', Arial , sans-serif;
   text-shadow: 2px 2px 2px rgba(0,0,0,.6);
   font-size: 18px;
@@ -950,7 +934,7 @@ h2 {
   line-height: 30px;
 }
 
-.section.equipe li#alvaro {
+.section.equipe li#gabriel {
   display: block;
   /*
   Originalmente estará com "display: none;"
@@ -983,10 +967,6 @@ h2 {
   background: url('assets/img/Contatos/background.png');
   background-attachment: fixed;
   font-family: 'AlegreyaSC';
-  min-height: 100vh;
-  position: relative;
-  width: 100%;
-  z-index: 0;
 }
 
 .section.contato:after {
@@ -997,21 +977,12 @@ h2 {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .section.contato h1 {
   background-color: rgba(255, 255, 255, 1);
   color: #8a2f31;
-  font: 2em 'AlegreyaSC';
-  font-weight: normal;
-  left: 0;
-  padding: .2em;
-  position: absolute;
-  text-align: center;
-  top: 8vw;
-  width: 100%;
-  z-index: 2;
 }
 
 .section.contato .form {
@@ -1021,7 +992,7 @@ h2 {
   margin: 0 auto;
   padding: 1em;
   position: relative;
-  top: 30vw;
+  top: 100px;
   width: calc(100% - 2em);
   z-index: 2;
 }
@@ -1115,21 +1086,7 @@ h2 {
 }
 
 @media screen and (min-width: 601px) {
-  .section.contato h1 {
-    background-color: rgba(255, 255, 255, 1);
-    color: #8a2f31;
-    font: 2em 'AlegreyaSC';
-    font-weight: normal;
-    left: 0;
-    padding: .2em;
-    position: absolute;
-    text-align: center;
-    top: 8vw;
-    width: 100%;
-  }
-
   .section.contato .form {
-    top: 20vw;
     width: calc(100% - 6em);
   }
 
@@ -1139,11 +1096,6 @@ h2 {
 }
 
 @media screen and (min-width: 1025px) {
-  .section.contato h1 {
-    font-size: 2.7em;
-    top: 4vw;
-  }
-
   .section.contato .wrapper {
     position: relative;
   }
@@ -1151,13 +1103,13 @@ h2 {
   .section.contato .form {
     left: 0;
     position: absolute;
-    top: 13vw;
     width: 25vw;
   }
 }
 .section.footer {
   background-color: #e9e9ec;
   padding: 3em 1em;
+  min-height: auto;
 }
 
 .section.footer ul,
@@ -1167,6 +1119,14 @@ h2 {
   font-family: 'AlegreyaSC';
   list-style: none;
   letter-spacing: 4px;
+}
+
+.section.footer .contatos, .section.footer .email {
+  text-align: center;
+}
+
+.section.footer .email {
+  letter-spacing: 1px;
 }
 
 .section.footer h2 {
@@ -1209,7 +1169,6 @@ h2 {
 .section.footer .contatos {
   font-size: .9em;
   line-height: 1.7em;
-  text-align: right;
   width: 60%;
 }
 
@@ -1267,6 +1226,7 @@ h2 {
 
   .section.footer .contatos .email {
     margin-top: 1em;
+    text-align: left;
   }
 
   .section.footer .bottom .logo-container {

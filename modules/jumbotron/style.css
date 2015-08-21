@@ -6,7 +6,6 @@
   font-family: 'AlegreyaSans';
   max-height: 100vh;
   overflow-y: hidden;
-  position: relative;
   z-index: 2;
 }
 
@@ -56,7 +55,7 @@
 
   .jumbotron .frases {
     width: 100%;
-    top: 40%;
+    top: 10%;
   }
 
   .jumbotron .frases p {
@@ -72,10 +71,13 @@
 
 
 @media screen and (min-width: 601px) {
+  .jumbotron .frases {
+    top: 25%;
+  }
 
   .jumbotron .frases p {
     display: none;
-    font-size: 2.5vw;
+    font-size: 3vw;
     letter-spacing: 4px;
   }
 

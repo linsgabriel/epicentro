@@ -6,10 +6,6 @@
   background: url('assets/img/Contatos/background.png');
   background-attachment: fixed;
   font-family: 'AlegreyaSC';
-  min-height: 100vh;
-  position: relative;
-  width: 100%;
-  z-index: 0;
 }
 
 .section.contato:after {
@@ -20,21 +16,12 @@
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .section.contato h1 {
   background-color: rgba(255, 255, 255, 1);
   color: #8a2f31;
-  font: 2em 'AlegreyaSC';
-  font-weight: normal;
-  left: 0;
-  padding: .2em;
-  position: absolute;
-  text-align: center;
-  top: 8vw;
-  width: 100%;
-  z-index: 2;
 }
 
 .section.contato .form {
@@ -44,7 +31,7 @@
   margin: 0 auto;
   padding: 1em;
   position: relative;
-  top: 30vw;
+  top: 100px;
   width: calc(100% - 2em);
   z-index: 2;
 }
@@ -138,21 +125,7 @@
 }
 
 @media screen and (min-width: 601px) {
-  .section.contato h1 {
-    background-color: rgba(255, 255, 255, 1);
-    color: #8a2f31;
-    font: 2em 'AlegreyaSC';
-    font-weight: normal;
-    left: 0;
-    padding: .2em;
-    position: absolute;
-    text-align: center;
-    top: 8vw;
-    width: 100%;
-  }
-
   .section.contato .form {
-    top: 20vw;
     width: calc(100% - 6em);
   }
 
@@ -162,11 +135,6 @@
 }
 
 @media screen and (min-width: 1025px) {
-  .section.contato h1 {
-    font-size: 2.7em;
-    top: 4vw;
-  }
-
   .section.contato .wrapper {
     position: relative;
   }
@@ -174,7 +142,6 @@
   .section.contato .form {
     left: 0;
     position: absolute;
-    top: 13vw;
     width: 25vw;
   }
 }
