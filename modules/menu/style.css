@@ -26,7 +26,7 @@
 }
 
 .menu ul {
-  /*display: inline-block;*/
+  display: inline-block;
   display: none;
   float: right;
   margin-top: 10px;

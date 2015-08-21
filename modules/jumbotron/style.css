@@ -6,7 +6,8 @@
   font-family: 'AlegreyaSans';
   max-height: 100vh;
   overflow-y: hidden;
-  z-index: 2;
+  position: relative;
+  z-index: 4;
 }
 
 .jumbotron:after {
@@ -53,15 +54,20 @@
 
 /* Resolução 320px - 600px */
 
+
+  .jumbotron {
+    margin-top: 70px;
+  }
+
   .jumbotron .frases {
     width: 100%;
-    top: 10%;
+    top: 20%;
   }
 
   .jumbotron .frases p {
     display: none;
-    font-size: 4vw;
-    letter-spacing: 2px;
+    font-size: 6vw;
+    letter-spacing: 1px;
   }
 
   .jumbotron .telefone {
@@ -71,19 +77,33 @@
 
 
 @media screen and (min-width: 601px) {
-  .jumbotron .frases {
-    top: 25%;
-  }
 
   .jumbotron .frases p {
     display: none;
-    font-size: 3vw;
+    font-size: 4vw;
     letter-spacing: 4px;
   }
 
   .jumbotron .telefone {
     bottom: 1vw;
     font-size: 2vw;
+  }
+}
+
+
+@media screen and (min-width: 801px) {
+
+  .jumbotron {
+    margin-top: 0;
+  }
+
+  .jumbotron .frases {
+    top: 40%;
+  }
+
+  .jumbotron .frases p {
+    font-size: 2.5vw;
+    letter-spacing: 4px;
   }
 }
 
