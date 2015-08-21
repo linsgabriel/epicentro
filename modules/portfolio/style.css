@@ -1,29 +1,20 @@
 .section.portfolio {
-  height: auto;
-  padding-top: 1px;
-  margin-bottom: 100px;
   background-image: url('assets/img/Portfolio/logo-desenho.png');
   background-repeat: no-repeat;
   background-position: 110% -10%;
-  font-size: 5em;
   font-weight: bolder;
-  color: rgba(0,0,0,.75); 
+  font-size: 100px;
 }
 
 .section.portfolio h1 {
-  text-align: center;
   background-color: #8a2f30;
   color: #fff;
-  font-weight: normal;
-  width: 100%;
-  padding: .2em;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
 }
 
 .section.portfolio .ancoraSite {
   width: 550px;
   height: 100px;
+  margin-top: 70px;
   margin-left: 50%; 
   transform: translateX(-50%); 
   overflow: hidden;
@@ -33,6 +24,7 @@
   display: inline-block;
   position: absolute;
   left: 20vw;
+  margin-top: 70px;
 }
 
 .section.portfolio .nav-right {

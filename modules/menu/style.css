@@ -7,7 +7,7 @@
   height: 70px;
   background-color: rgba(255,255,255,1);
   color: #842c2e;
-  z-index: 9999;
+  z-index: 4;
 }
 
 .menu h1 {
@@ -26,7 +26,8 @@
 }
 
 .menu ul {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: none;
   float: right;
   margin-top: 10px;
   margin-right: 10px;
@@ -84,7 +85,7 @@
   }
 
   .menu ul {
-    display: block;
+    /*display: block;*/
     width: 100%;
     margin: 0;
     text-align: center;
