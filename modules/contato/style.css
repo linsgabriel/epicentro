@@ -6,6 +6,7 @@
   background: url('assets/img/Contatos/background.png');
   background-attachment: fixed;
   font-family: 'AlegreyaSC';
+  min-height: 700px;
 }
 
 .section.contato:after {
