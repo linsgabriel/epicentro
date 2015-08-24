@@ -48,7 +48,7 @@ img {
   font: 50px 'AlegreyaSC', Arial, sans-serif;
   font-weight: normal;
   width: 100%;
-  margin-top: .2em;
+  margin-top: .65em;
   text-align: center;
 }
 
@@ -232,7 +232,6 @@ h2 {
 
 .menu ul {
   display: inline-block;
-  display: none;
   float: right;
   margin-top: 10px;
   margin-right: 10px;
@@ -290,7 +289,7 @@ h2 {
   }
 
   .menu ul {
-    /*display: block;*/
+    display: block;
     width: 100%;
     margin: 0;
     text-align: center;
@@ -678,7 +677,7 @@ h2 {
   }
 
   .section.portfolio .ancoraSite {
-    width: 470px;
+    width: 490px;
   }
 
   .section.portfolio .laptop .siteTela {
@@ -707,7 +706,7 @@ h2 {
   }
 
   .section.portfolio .ancoraSite {
-    width: 410px;
+    width: 450px;
   }
 
   .section.portfolio .laptop {
@@ -883,7 +882,7 @@ h2 {
   display: inline-block;
   margin: 1% 2%;
   cursor: pointer;
-  transition: background-size .2s linear;
+  transition: background-size .2s;
 }
 
 .section.equipe .membros li:hover {
