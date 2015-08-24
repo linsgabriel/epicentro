@@ -131,6 +131,16 @@
   height: 370px;
 }
 
+@media screen and (min-width: 1250px) and (max-width: 1960px) {
+    .section.portfolio .nav-left {
+    left: 20vw;
+  } 
+
+  .section.portfolio .nav-right {
+    right: 20vw;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .section.portfolio .nav-left {
     left: 16vw;
@@ -271,24 +281,26 @@
 
 @media screen and (max-width: 450px) {
   .section.portfolio .laptop {
-    width: 320px;
-    height: 194px;
+    width: 310px;
+    height: 174px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .section.portfolio .nav-left {
-    left: 1vw;
+    left: .5vw;
   } 
 
   .section.portfolio .nav-right {
-    right: 1vw;
+    right: .5vw;
   }
 
   .section.portfolio .ancoraSite {
-    width: 265px;
+    width: 210px;
   }
 
   .section.portfolio ul {
-    width: 200%;
+    width: 250%;
   }
 
   .section.portfolio ul li {
@@ -297,12 +309,12 @@
   }
 
   .section.portfolio .laptop .siteTela {
-    width: 260px;
-    height: 140px;
+    width: 240px;
+    height: 130px;
     margin-top: 10px;
   }
 
   .section.portfolio .laptop .siteFull {
-    height: 140px;
+    height: 130px;
   }
 }
