@@ -76,7 +76,6 @@ h2 {
 @media screen and (max-width: 450px) {
   .section {
     padding-bottom: 30px;
-    min-height: auto;
   }
 
   .section h1 {
@@ -783,7 +782,7 @@ h2 {
     width: 310px;
     height: 174px;
     padding-bottom: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .section.portfolio .nav-left {
@@ -795,7 +794,7 @@ h2 {
   }
 
   .section.portfolio .ancoraSite {
-    width: 210px;
+    width: 208px;
   }
 
   .section.portfolio ul {
