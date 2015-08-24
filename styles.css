@@ -36,9 +36,9 @@ img {
 }
 
 .section {
+  float: left;
   position: relative;
   width: 100%;
-  min-height: 100vh;
   z-index: 3;
   padding: 30px 0 60px 0;
 }
@@ -400,11 +400,12 @@ h2 {
   }
 
   .section.servicos .postits {
-    margin-right: 30px;
+    margin: 0 auto;
+    max-width: 320px;
   }
 
   .section.servicos .postit {
-    margin: 30px 0 0 30px;
+    margin: 30px 15px 0 15px;
     padding: 15px;
     width: 230px;
   }
@@ -426,8 +427,15 @@ h2 {
 
 @media screen and (min-width: 601px) {
 
+  .section.servicos .postits {
+    margin: 0 auto;
+    max-width: 570px;
+    padding: 0 15px;
+  }
+
   .section.servicos .postit {
     /*margin: 30px 30px 0 30px;*/
+    float: left;
     padding: 15px;
     width: 230px;
   }
@@ -451,12 +459,15 @@ h2 {
   }
 
   .section.servicos .postits {
-    margin: 0 15px;
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 0 15px;
   }
 
   .section.servicos .postit {
-    margin: 3vw 1vw 0 1vw;
-    padding: 1vw;
+    float: inherit;
+    margin: 30px 15px 0 15px;
+    padding: 15px;
     width: 230px;
   }
 
@@ -472,8 +483,8 @@ h2 {
   }
 
   .section.servicos .postit p {
-    font-size: 1em;
-    margin: .5vw 0;
+    font-size: .9em;
+    margin: 5px 0;
   }
 
   .section.servicos .postit.laranja {
@@ -994,6 +1005,7 @@ h2 {
   background: url('assets/img/Contatos/background.png');
   background-attachment: fixed;
   font-family: 'AlegreyaSC';
+  min-height: 700px;
 }
 
 .section.contato:after {
@@ -1251,6 +1263,11 @@ h2 {
     width: 50%;
   }
 
+  .section.footer .telefone {
+    display: inline-block;
+    padding-top: 10px;
+  }
+
   .section.footer .contatos .email {
     margin-top: 1em;
     text-align: left;
@@ -1294,6 +1311,11 @@ h2 {
     padding-left: 4em;
     text-align: left;
     width: 50%;
+  }
+
+  .section.footer .telefone {
+    display: inline-block;
+    padding-top: 10px;
   }
 
   .section.footer .contatos .email {

@@ -116,6 +116,11 @@
     width: 50%;
   }
 
+  .section.footer .telefone {
+    display: inline-block;
+    padding-top: 10px;
+  }
+
   .section.footer .contatos .email {
     margin-top: 1em;
     text-align: left;
@@ -159,6 +164,11 @@
     padding-left: 4em;
     text-align: left;
     width: 50%;
+  }
+
+  .section.footer .telefone {
+    display: inline-block;
+    padding-top: 10px;
   }
 
   .section.footer .contatos .email {
