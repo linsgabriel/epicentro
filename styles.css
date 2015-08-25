@@ -826,8 +826,7 @@ h2 {
   .section.portfolio .laptop .siteFull {
     height: 130px;
   }
-}
-/* Frase -------------------------------------------------------------------- */
+}/* Frase -------------------------------------------------------------------- */
 
 .section.frase {
   background: url('assets/img/Frase/fundo.jpg');
@@ -842,12 +841,10 @@ h2 {
   color: #520034;
   font: 2em 'AlegreyaSC';
   font-weight: normal;
-  left: 0;
-  margin-top: 100px;
   padding: 5vw;
-  position: absolute;
   text-align: center;
-  top: calc(45% - 7em);
+  margin-top: 20%;
+  margin-bottom: 600px;
   width: 100%;
   letter-spacing: 4px;
 }
