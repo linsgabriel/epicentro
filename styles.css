@@ -521,38 +521,41 @@ h2 {
 }
 
 .section.portfolio .ancoraSite {
+  position: relative;
   width: 550px;
   height: 120px;
   margin-top: 70px;
-  margin-left: 50%; 
-  transform: translateX(-50%); 
+  margin-left: calc(50% - 275px); 
   overflow: hidden;
 }
 
-.section.portfolio .nav-left {
+.section.portfolio .laptop .nav-left {
   display: inline-block;
   position: absolute;
-  left: 20vw;
-  margin-top: 70px;
+  left: 0;
+  top: -170px;
+  width: 70px;
 }
 
-.section.portfolio .nav-right {
+.section.portfolio .laptop .nav-right {
   display: inline-block;
   position: absolute;
-  right: 20vw;
-  margin-top: -120px;
+  right: 0;
+  top: -170px;
+  width: 70px;
 }
 
 .section.portfolio ul {
-  min-width: 200%;
-  text-align: center;
+  width: auto;
   margin: auto;
-  transition: transform .8s linear;
+  transition: left .8s;
   overflow: hidden;
+  position: absolute;
+  left: 0;
 }
 
 .section.portfolio ul:hover {
-  transform: translateX(-50%);
+  left: -100%;
 } 
 
 .section.portfolio ul li {
@@ -571,6 +574,34 @@ h2 {
 
 .section.portfolio ul li:hover {
   opacity: .7;
+}
+
+.section.portfolio .laptop {
+  background-image: url('assets/img/Portfolio/laptop.png');
+  background-size: 100% 100%;
+  width: 924px;
+  max-width: 100%;
+  height: 523px;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+}
+
+.section.portfolio .laptop .siteTela {
+  position: absolute;
+  height: 150px;
+  width: 730px;
+  margin-top: 40px;
+  left: 50%;
+  transform: translateX(-50%); 
+  border-radius: 10px;
+}
+
+.section.portfolio .laptop .siteFull {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 370px;
 }
 
 .section.portfolio ul li:nth-child(1) {
@@ -611,43 +642,6 @@ h2 {
 
 .section.portfolio ul li:nth-child(10) {
   background-image: url('assets/img/Portfolio/iconeApeve.jpg');
-}
-
-.section.portfolio .laptop {
-  background-image: url('assets/img/Portfolio/laptop.png');
-  background-size: 100% 100%;
-  width: 924px;
-  max-width: 100%;
-  height: 523px;
-  margin: auto;
-  margin-top: 50px;
-}
-
-.section.portfolio .laptop .siteTela {
-  position: absolute;
-  height: 150px;
-  width: 730px;
-  margin-top: 40px;
-  left: 50%;
-  transform: translateX(-50%); 
-  border-radius: 10px;
-}
-
-.section.portfolio .laptop .siteFull {
-  position: absolute;
-  overflow: auto;
-  width: 100%;
-  height: 370px;
-}
-
-@media screen and (min-width: 1250px) and (max-width: 1960px) {
-    .section.portfolio .nav-left {
-    left: 20vw;
-  } 
-
-  .section.portfolio .nav-right {
-    right: 20vw;
-  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -844,7 +838,7 @@ h2 {
   padding: 5vw;
   text-align: center;
   margin-top: 20%;
-  margin-bottom: 600px;
+  margin-bottom: 100vh;
   width: 100%;
   letter-spacing: 4px;
 }
