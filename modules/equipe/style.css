@@ -75,7 +75,7 @@
   height: 100%;
   background-color: rgba(83,25,63,.65);
   opacity: 0;
-  transition: opacity .5s linear;
+  /*transition: opacity .5s linear;*/ /* Ta dando bug no menu */
 }
 
 .section.equipe span.nomeFuncao:hover {
