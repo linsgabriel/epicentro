@@ -218,7 +218,7 @@ h2 {
 
 .menu.transparencia {
   background-color: rgba(255,255,255,.95);
-  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 }
 
 .menu h1 {
@@ -535,34 +535,32 @@ h2 {
   overflow: hidden;
 }
 
+.section.portfolio .laptop .nav-right,
 .section.portfolio .laptop .nav-left {
+  cursor: pointer;
   display: inline-block;
+  font-size: .8em;
   position: absolute;
-  left: 0;
-  top: -170px;
+  top: -160px;
   width: 70px;
+}
+
+.section.portfolio .laptop .nav-left {
+  left: 70px;
 }
 
 .section.portfolio .laptop .nav-right {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: -170px;
-  width: 70px;
+  right: 70px;
 }
 
 .section.portfolio ul {
-  width: auto;
+  width: 200%;
   margin: auto;
   transition: left .8s;
   overflow: hidden;
   position: absolute;
   left: 0;
 }
-
-.section.portfolio ul:hover {
-  left: -100%;
-} 
 
 .section.portfolio ul li {
   display: inline-block;
@@ -572,7 +570,7 @@ h2 {
   background-color: #aaa;  
   margin: 0 .2vw;
   box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-  transition: opacity .4s linear;
+  /*transition: opacity .4s linear;*/
   background-size: cover;
   background-position: center;
   cursor: pointer;
@@ -679,12 +677,18 @@ h2 {
 }
 
 @media screen and (max-width: 950px) {
+
+  .section.portfolio .laptop .nav-left,
+  .section.portfolio .laptop .nav-right {
+    top: -150px;
+  }
+
   .section.portfolio .nav-left {
-    left: 8vw;
+    left: 0;
   } 
 
   .section.portfolio .nav-right {
-    right: 8vw;
+    right: 0;
   }
 
   .section.portfolio ul li {
@@ -698,6 +702,7 @@ h2 {
   }
 
   .section.portfolio .ancoraSite {
+    margin-left: calc(50% - 250px);
     width: 490px;
   }
 
@@ -713,12 +718,19 @@ h2 {
     background-position: 110% -5%;
   }
 
-  .section.portfolio .nav-left {
-    left: 7vw;
+  .section.portfolio .laptop .nav-left,
+  .section.portfolio .laptop .nav-right {
+    font-size: .7em;
+  }
+
+  .section.portfolio .laptop .nav-left {
+    left: 0;
+    top: -140px;
   } 
 
-  .section.portfolio .nav-right {
-    right: 7vw;
+  .section.portfolio .laptop .nav-right {
+    right: -35px;
+    top: -140px;
   }
 
   .section.portfolio ul li {
@@ -727,7 +739,8 @@ h2 {
   }
 
   .section.portfolio .ancoraSite {
-    width: 450px;
+    margin-left: calc(50% - 215px);
+    width: 440px;
   }
 
   .section.portfolio .laptop {
@@ -752,13 +765,19 @@ h2 {
     font-size: 3em;
   }
 
+  .section.portfolio .laptop .nav-left,
+  .section.portfolio .laptop .nav-right {
+    top: -115px;
+  }
+
   .section.portfolio .nav-left {
-    left: 3vw;
+    left: 30px;
+    top: -120px;
   } 
 
   .section.portfolio .nav-right {
-    right: 3vw;
-    margin-top: -70px;
+    right: -15px;
+    top: -120px;
   }
 
   .section.portfolio ul li {
@@ -770,6 +789,7 @@ h2 {
   .section.portfolio .ancoraSite {
     width: 315px;
     height: 70px;
+    margin-left: calc(50% - 156px);
   }
 
   .section.portfolio .laptop {
@@ -796,16 +816,23 @@ h2 {
     margin-bottom: 20px;
   }
 
-  .section.portfolio .nav-left {
-    left: .5vw;
-  } 
+  .section.portfolio .laptop .nav-left,
+  .section.portfolio .laptop .nav-right {
+    top: -115px;
+    width: auto;
+  }
 
-  .section.portfolio .nav-right {
-    right: .5vw;
+  .section.portfolio .laptop .nav-right {
+    right: 0;
+  }
+
+  .section.portfolio .laptop .nav-left {
+    left: 0;
   }
 
   .section.portfolio .ancoraSite {
-    width: 208px;
+    margin-left: calc(50% - 130px);
+    width: 265px;
   }
 
   .section.portfolio ul {
@@ -979,18 +1006,8 @@ h2 {
 .section.equipe div.descricao li {
   display: none;
   line-height: 30px;
+  list-style: none;
 }
-
-.section.equipe li#gabriel {
-  display: block;
-  /*
-  Originalmente estará com "display: none;"
-  Ao clicar em determinada foto dispara uma ação no JS
-  que mudará o id acima especificado para o nome do membro.
-  e mostrará esse item com "display: block;" 
-  */
-}
-
 
 @media screen and (max-width: 900px) {
   .section.equipe .membros li {
