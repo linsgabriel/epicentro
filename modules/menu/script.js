@@ -1,16 +1,52 @@
+
 // Menu
 
-$(window).scroll(function() {
+  // Transparencia
 
-  var menuTop = $('.menu:eq(0)').offset().top;
+    // $(window).scroll(function() {
 
-  if (menuTop === 0) {
+    //   var menuTop = $('.menu:eq(0)').offset().top;
 
-    $('.menu:eq(0)').removeClass('transparencia');
-  }
+    //   if (menuTop === 0) {
 
-  if (menuTop > 0) {
+    //     $('.menu:eq(0)').removeClass('transparencia');
+    //   }
 
-    $('.menu:eq(0)').addClass('menu transparencia');
-  } 
-});
+    //   if (menuTop > 0) {
+
+    //     $('.menu:eq(0)').addClass('menu transparencia');
+    //   } 
+    // });
+
+  // Mobile
+
+    var isActive = false;
+
+    $('.icone-menu').click(function() {
+
+      console.log(isActive);
+
+      if (isActive === false) {
+        
+        $('.icone-menu').addClass('rotate');
+        $('.menu ul').slideDown();
+        isActive = true;
+
+      } else if (isActive === true) {
+        
+        $('.icone-menu').removeClass('rotate');
+        $('.menu ul').slideUp();
+        isActive = false;
+      }
+      
+      
+      // 
+    });
+
+    $('.rotate').click(function() {
+
+      alert('saco');
+      
+      // $('.icone-menu.rotate').removeClass('icone-menu rotate');
+      // $('.menu ul').slideUp();
+    });
