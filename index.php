@@ -66,9 +66,5 @@
   </main>
 </body>
 <script src="assets/js/jquery-1.11.3.min.js"></script>
-<<<<<<< HEAD
 <script src="scripts.js"></script>
-=======
-<script src='scripts.js'></script>
->>>>>>> 5ab356ee77b5d3fba2687a5ca0318aef7242c44c
 </html>

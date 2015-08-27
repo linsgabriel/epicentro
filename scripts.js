@@ -1,5 +1,19 @@
-<<<<<<< HEAD
-// Portfolio
+// Menu
+
+$(window).scroll(function() {
+
+  var menuTop = $('.menu:eq(0)').offset().top;
+
+  if (menuTop === 0) {
+
+    $('.menu:eq(0)').removeClass('transparencia');
+  }
+
+  if (menuTop > 0) {
+
+    $('.menu:eq(0)').addClass('menu transparencia');
+  } 
+});// Portfolio
 
   // Navegação
 
@@ -38,21 +52,24 @@
     mostraImagem('papilon');
     mostraImagem('preventser');
     mostraImagem('apave');
-=======
-// Menu
+// Equipe
 
-$(window).scroll(function() {
+function mostrarDescricao(arg) {
 
-  var menuTop = $('.menu:eq(0)').offset().top;
+  $('.membro.'+arg+'').hover(function() {
 
-  if (menuTop === 0) {
+    if ($('.descricao-membro.'+arg+'').css('display') != 'list-item') {
 
-    $('.menu:eq(0)').removeClass('transparencia');
-  }
+      $('.descricao-membro').slideUp();
+      $('.descricao-membro.'+arg+'').slideDown();
+    }
 
-  if (menuTop > 0) {
-
-    $('.menu:eq(0)').addClass('menu transparencia');
-  } 
+  console.log();
 });
->>>>>>> 5ab356ee77b5d3fba2687a5ca0318aef7242c44c
+}
+
+mostrarDescricao('alvaro');
+mostrarDescricao('gabriel');
+mostrarDescricao('jessica');
+mostrarDescricao('joao');
+mostrarDescricao('junior');
