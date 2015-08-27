@@ -7,7 +7,13 @@
   height: 70px;
   background-color: rgba(255,255,255,1);
   color: #842c2e;
+  transition: background-color .5s;
   z-index: 4;
+}
+
+.menu.transparencia {
+  background-color: rgba(255,255,255,.95);
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 }
 
 .menu h1 {
@@ -45,7 +51,7 @@
   border: none;
   text-decoration: none;
   color: #842c2e;
-  transition: all .5s linear;
+  transition: color .2s linear;
 }
 
 .menu a:hover {
