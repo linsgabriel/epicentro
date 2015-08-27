@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Portfolio
 
   // Navegação
@@ -37,3 +38,21 @@
     mostraImagem('papilon');
     mostraImagem('preventser');
     mostraImagem('apave');
+=======
+// Menu
+
+$(window).scroll(function() {
+
+  var menuTop = $('.menu:eq(0)').offset().top;
+
+  if (menuTop === 0) {
+
+    $('.menu:eq(0)').removeClass('transparencia');
+  }
+
+  if (menuTop > 0) {
+
+    $('.menu:eq(0)').addClass('menu transparencia');
+  } 
+});
+>>>>>>> 5ab356ee77b5d3fba2687a5ca0318aef7242c44c
