@@ -1000,18 +1000,8 @@ h2 {
 .section.equipe div.descricao li {
   display: none;
   line-height: 30px;
+  list-style: none;
 }
-
-.section.equipe li#gabriel {
-  display: block;
-  /*
-  Originalmente estará com "display: none;"
-  Ao clicar em determinada foto dispara uma ação no JS
-  que mudará o id acima especificado para o nome do membro.
-  e mostrará esse item com "display: block;" 
-  */
-}
-
 
 @media screen and (max-width: 900px) {
   .section.equipe .membros li {
