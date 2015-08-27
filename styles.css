@@ -216,10 +216,10 @@ h2 {
   z-index: 4;
 }
 
-.menu.transparencia {
+/*.menu.transparencia {
   background-color: rgba(255,255,255,.95);
   box-shadow: 0 0 3px rgba(0, 0, 0, .5);
-}
+}*/
 
 .menu h1 {
   display: none;
@@ -275,6 +275,7 @@ h2 {
   }
 
   .menu ul {
+    display: inline-block;
     margin-top: 20px;
   }
 
@@ -295,18 +296,16 @@ h2 {
   }
 
   .menu ul {
-    display: block;
+    display: none;
     width: 100%;
     margin: 0;
     text-align: center;
-    transform: translateX(0); /* 120% e fica 0 ao clicar no ícone-menu pelo onclick no JS */
-    transition: all .4s linear;
   }
 
   .menu ul li {
     display: block;
     width: 100%;
-    background-color: rgba(255,255,255,.95);
+    background-color: rgba(255,255,255,1);
     padding-bottom: 20px;
   }
 
@@ -324,6 +323,23 @@ h2 {
     font-size: 80px;
     color: #414142;
     cursor: pointer;
+    height: 70px;
+    width: 70px;
+  }
+
+  .menu .icone-menu.rotate {
+    display: inline-block;
+    position: relative;
+    float: right;
+    top: 0;
+    right: -15px;
+    height: 100%;
+    font-size: 80px;
+    color: #414142;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    transform: rotate(90deg);
   }
 }
 
