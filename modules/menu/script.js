@@ -51,6 +51,15 @@
       // $('.menu ul').slideUp();
     });
 
+  // Trocar Logo
+
+    console.log($(window).width());
+
+    if ($(window).width() < 786) {
+
+      $('.menu .logo').attr('src', 'assets/img/Menu/icone.png');
+    }
+
   // Aumentar largura
 
     var activate = $(window).height();
