@@ -1,0 +1,28 @@
+### Epicentro ###
+
+Options +SymLinksIfOwnerMatch -Indexes
+
+<Files ~ "^\.(htaccess|htpasswd)$">
+	deny from all
+</Files>
+
+<IfModule !mod_rewrite.c>
+    SetEnv HTTP_MOD_REWRITE No
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine on
+    RewriteBase /
+
+    ### SECURITY - Protect crucial files
+    RewriteRule ^assets/(.*)$ - [F]
+    RewriteRule ^(.*)\.sql$ - [F]
+    RewriteRule (^|/)\. - [F]
+
+</IfModule>
+###
