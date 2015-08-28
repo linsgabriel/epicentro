@@ -47,19 +47,19 @@ var length = $('.jumbotron .frases p').length;
 
     var isActive = false;
 
-    $('.icone-menu').click(function() {
+    $('.menu-bar').click(function() {
 
       console.log(isActive);
 
       if (isActive === false) {
         
-        $('.icone-menu').addClass('rotate');
+        $('.menu-bar').addClass('rotate');
         $('.menu ul').slideDown();
         isActive = true;
 
       } else if (isActive === true) {
         
-        $('.icone-menu').removeClass('rotate');
+        $('.menu-bar').removeClass('rotate');
         $('.menu ul').slideUp();
         isActive = false;
       }
@@ -68,13 +68,13 @@ var length = $('.jumbotron .frases p').length;
       // 
     });
 
-    $('.rotate').click(function() {
+    // $('.rotate').click(function() {
 
-      alert('saco');
+    //   alert('saco');
       
-      // $('.icone-menu.rotate').removeClass('icone-menu rotate');
-      // $('.menu ul').slideUp();
-    });
+    //   // $('.icone-menu.rotate').removeClass('icone-menu rotate');
+    //   // $('.menu ul').slideUp();
+    // });
 
   // Trocar Logo
 
