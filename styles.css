@@ -93,23 +93,11 @@ h2 {
   z-index: 4;
 }
 
-
 .jumbotron .banner {
   position: relative;
   overflow: auto;
   max-width: 100%;
   z-index: 2;
-}
-
-.jumbotron:after {
-  background-color: rgba(59,6,34, .15);
-  content: '';
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
 }
 
 .jumbotron .banner li {
@@ -142,10 +130,6 @@ h2 {
   text-align: center;
   text-shadow: 1px 1px 3px #000;
 }
-
-/*.jumbotron .frase p.active {
-  display: inherit;
-}*/
 
 .jumbotron .telefone {
   left: 0;
