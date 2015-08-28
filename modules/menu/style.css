@@ -7,7 +7,7 @@
   height: 70px;
   background-color: rgba(255,255,255,1);
   color: #842c2e;
-  transition: background-color .5s;
+  transition: background-color .5s, width .5s, left .5s, margin-left .5s;
   z-index: 4;
 }
 
@@ -15,6 +15,13 @@
   background-color: rgba(255,255,255,.95);
   box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 }*/
+
+.menu.full {
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+  transition: width .5s, left .5s, margin-left .5s;
+}
 
 .menu h1 {
   display: none;
