@@ -27,7 +27,7 @@
   display: none;
 }
 
-.menu .logo {
+/*.menu .logo {
   background-image: url('assets/img/Menu/logo.png');
   background-size: 100% 100%;
   width: 260px;
@@ -36,6 +36,13 @@
   float: left;
   margin-left: 20px;
   margin-top: 7px;
+}*/
+
+.menu .logo {
+  height: 80%;
+  position: absolute;
+  top: 5px;
+  left: 15px;
 }
 
 .menu ul {
@@ -145,7 +152,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .menu .logo {
     background-image: url('assets/img/Menu/icone.png');
     background-size: 100% 100%;
@@ -153,4 +160,4 @@
     width: 60px;
     height: 60px;
   }
-}
+}*/
