@@ -1,4 +1,29 @@
 
+// Jumbotron
+
+var frase = $('.jumbotron .frases p');
+
+var i = 0;
+var length = $('.jumbotron .frases p').length;
+
+// console.log(length);
+
+// setInterval(function() {
+
+//   // console.log(frase[0]);
+
+//   console.log(i);
+
+//   if (i < length - 1) {
+
+//     i++;
+
+//   } else {
+
+//     i = 0;
+//   }
+// },1000);
+
 // Menu
 
   // Transparencia
@@ -49,6 +74,25 @@
       
       // $('.icone-menu.rotate').removeClass('icone-menu rotate');
       // $('.menu ul').slideUp();
+    });
+
+  // Aumentar largura
+
+    var activate = $(window).height();
+
+    $(window).scroll(function() {
+
+      var menuTop = $('.menu:eq(0)').offset().top;
+
+      if (menuTop < activate) {
+
+        $('.menu:eq(0)').removeClass('full');
+      }
+
+      if (menuTop > activate) {
+
+        $('.menu:eq(0)').addClass('menu full');
+      } 
     });
 // Portfolio
 

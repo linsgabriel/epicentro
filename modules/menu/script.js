@@ -50,3 +50,22 @@
       // $('.icone-menu.rotate').removeClass('icone-menu rotate');
       // $('.menu ul').slideUp();
     });
+
+  // Aumentar largura
+
+    var activate = $(window).height();
+
+    $(window).scroll(function() {
+
+      var menuTop = $('.menu:eq(0)').offset().top;
+
+      if (menuTop < activate) {
+
+        $('.menu:eq(0)').removeClass('full');
+      }
+
+      if (menuTop > activate) {
+
+        $('.menu:eq(0)').addClass('menu full');
+      } 
+    });
