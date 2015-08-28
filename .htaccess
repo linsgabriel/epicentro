@@ -20,7 +20,6 @@ Options +SymLinksIfOwnerMatch -Indexes
     RewriteBase /
 
     ### SECURITY - Protect crucial files
-    RewriteRule ^modules/(.*)$ - [F]
     RewriteRule ^assets/(.*)$ - [F]
     RewriteRule ^(.*)\.sql$ - [F]
     RewriteRule (^|/)\. - [F]
