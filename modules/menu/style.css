@@ -108,7 +108,9 @@
     display: none;
     width: 100%;
     margin: 0;
+    position: relative;
     text-align: center;
+    top: 100%;
   }
 
   .menu ul li {
