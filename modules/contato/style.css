@@ -5,8 +5,10 @@
 .section.contato {
   background: url('assets/img/Contatos/background.png');
   background-attachment: fixed;
+  background-position: center;
   font-family: 'AlegreyaSC';
-  min-height: 700px;
+  height: 100%;
+  overflow: hidden;
 }
 
 .section.contato:after {
@@ -32,9 +34,26 @@
   margin: 0 auto;
   padding: 1em;
   position: relative;
-  top: 100px;
+  top: 30px;
+  margin-left: 10px;
   width: calc(100% - 2em);
   z-index: 2;
+}
+
+.section.contato #formul {
+  -moz-transition: top 1s;
+  -webkit-transition: top 1s;
+  -o-transition: top 1s;
+  transition: top 1s;
+}
+
+.section.contato #fechamapa {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  padding-left: 100px;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .section.contato .form .full {
@@ -94,13 +113,13 @@
 
 .section.contato .map-modal {
   background-color: rgba(255, 255, 255, 0.5);
-  display: none;
-  height: 100%;
-  left: 0;
   position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 3;
+  height: 550px;
+  width: 1000px;
+  left: 50%;
+  top: 143px;
+  margin-left: -500px;
+  cursor: pointer;
 }
 
 .section.contato .map-modal .fechar {
@@ -118,10 +137,10 @@
 
 .section.contato .map-modal .mapa {
   height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
   z-index: 1;
 }
 
@@ -133,16 +152,33 @@
   .section.contato .form textarea {
     min-height: 100px;
   }
+  
+  .section.contato #fechamapa {
+    top: 150px;
+    left: 50%;
+    padding-left: 200px;
+  }
 }
 
 @media screen and (min-width: 1025px) {
   .section.contato .wrapper {
     position: relative;
+    width: 1000px;
+    height: 550px;
+    border: 0px solid #000;
   }
 
   .section.contato .form {
+    top: 130px;
+    top: 130px;
     left: 0;
     position: absolute;
     width: 25vw;
+  }
+  
+  .section.contato #fechamapa {
+    top: 180px;
+    left: 50%;
+    padding-left: 405px;
   }
 }
