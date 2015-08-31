@@ -66,5 +66,7 @@
   </main>
 </body>
 <script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/unslider.min.js"></script>
 <script src="scripts.js"></script>
 </html>

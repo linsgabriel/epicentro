@@ -93,42 +93,68 @@ h2 {
   z-index: 4;
 }
 
-.jumbotron:after {
-  background-color: rgba(59,6,34, .15);
-  content: '';
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+.jumbotron .banner {
+  position: relative;
+  overflow: auto;
+  max-width: 100%;
+  z-index: 2;
 }
 
-.jumbotron .slider img {
-  display: block;
-  height: auto;
-  width: 100%;
+.jumbotron .banner li {
+  list-style: none;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
-.jumbotron .frases {
-  position: absolute;
+
+.jumbotron .banner ul li {
+  float: left;
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron .banner ul li .frase {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20%;
   z-index: 3;
 }
 
-.jumbotron .frases p {
-  display: none;
+.jumbotron .banner ul li .frase p {
+  display: inherit;
   text-align: center;
   text-shadow: 1px 1px 3px #000;
 }
 
-.jumbotron .frases p.active {
-  display: inherit;
-  /*letter-spacing: 4px;*/
+.jumbotron .banner .dots {
+  position: absolute;
+  top: 90vh;
+  left: calc(50% - 55px);
+}
+
+
+.jumbotron .banner .dots li {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  max-height: 15px; 
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  background-color: #fff;
+  opacity: .3;
+  border: 1px solid #fff;
+  cursor: pointer;
+  text-indent: -999em;
+}
+
+.jumbotron .banner .dots li.active {
+  opacity: 1;
 }
 
 .jumbotron .telefone {
-  left: 0;
-  position: absolute;
+  position: relative;
   text-align: center;
   text-shadow: 1px 1px 3px #000;
   z-index: 3;
@@ -142,13 +168,12 @@ h2 {
     margin-top: 70px;
   }
 
-  .jumbotron .frases {
+  .jumbotron .banner ul li .frase {
     width: 100%;
     top: 20%;
   }
 
-  .jumbotron .frases p {
-    display: none;
+  .jumbotron .banner ul li .frase p {
     font-size: 6vw;
     letter-spacing: 1px;
   }
@@ -161,8 +186,7 @@ h2 {
 
 @media screen and (min-width: 601px) {
 
-  .jumbotron .frases p {
-    display: none;
+  .jumbotron .banner ul li .frase p {
     font-size: 4vw;
     letter-spacing: 4px;
   }
@@ -180,11 +204,11 @@ h2 {
     margin-top: 0;
   }
 
-  .jumbotron .frases {
+  .jumbotron .banner ul li .frase {
     top: 40%;
   }
 
-  .jumbotron .frases p {
+  .jumbotron .banner ul li .frase p {
     font-size: 2.5vw;
     letter-spacing: 4px;
   }
@@ -192,9 +216,8 @@ h2 {
 
 @media screen and (min-width: 1025px) {
 
-  .jumbotron .frases p {
-    display: none;
-    font-size: 1.8vw;
+  .jumbotron .banner ul li .frase p {
+    font-size: 2vw;
     letter-spacing: 4px;
   }
 
