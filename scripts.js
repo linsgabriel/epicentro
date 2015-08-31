@@ -148,8 +148,9 @@ var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Const
 var isChrome = !!window.chrome && !isOpera;
 var isIE = /*@cc_on!@*/false || !!document.documentMode;
 
-if (isChrome) {
+if (isIE) {
   document.getElementsByClassName('frase')[0].className = "section frase nao-fixo";
+  document.getElementsByClassName('contato')[0].className = "section frase nao-fixo";
 }// Equipe
 
 function mostrarDescricao(arg) {

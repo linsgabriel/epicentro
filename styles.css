@@ -1057,6 +1057,10 @@ h2 {
   overflow: hidden;
 }
 
+.section.contato.nao-fixo {
+  background-attachment: scroll;
+}
+
 .section.contato:after {
   background-color: rgba(255, 255, 255, 0.7);
   content: '';
