@@ -2,7 +2,7 @@
   <h1 class="hidden">Epicentro Tecnologia</h1>
   <?php include 'modules/menu/index.html' ?>
   <div class="slider">
-    <img src="assets/img/Jumbotron/jumbotron3.jpg" alt="jumbotron">
+    <img src="assets/img/Jumbotron/jumbotron1.jpg" alt="jumbotron">
   </div>
   <div class="frases">
     <p class="active">A Epicentro Tecnologia desenvolve <br>soluções em páginas web, <br>sistemas de gerenciamento de<br> conteúdo e design gráfico</p>
