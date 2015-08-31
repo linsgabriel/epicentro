@@ -53,13 +53,13 @@ var length = $('.jumbotron .frases p').length;
 
       if (isActive === false) {
         
-        $('.menu-bar').addClass('rotate');
+        $('.menu-bar').attr('src','assets/img/Menu/menu-bar-active.png');
         $('.menu ul').slideDown();
         isActive = true;
 
       } else if (isActive === true) {
         
-        $('.menu-bar').removeClass('rotate');
+        $('.menu-bar').attr('src','assets/img/Menu/menu-bar.png');
         $('.menu ul').slideUp();
         isActive = false;
       }
