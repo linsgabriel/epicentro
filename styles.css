@@ -1045,6 +1045,7 @@ h2 {
 
 .section.contato {
   background: url('assets/img/Contatos/background.png');
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   font-family: 'AlegreyaSC';
@@ -1090,11 +1091,18 @@ h2 {
 
 .section.contato #fechamapa {
   position: absolute;
-  top: 10px;
-  left: 50%;
-  padding-left: 100px;
+  top: calc(85% - -24px);
+  left: calc(50% - 35px);
   z-index: 10;
   cursor: pointer;
+  background-color: #c00;
+  border-radius: 5px;
+  color: #fff;
+  font: 1em 'AlegreyaSC';
+  font-weight: bold;
+  padding: .5em 1em;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .section.contato .form .full {
@@ -1126,7 +1134,6 @@ h2 {
   background-color: #c00;
   border-radius: 5px;
   color: #fff;
-  color: #fff;
   cursor: pointer;
   font: 1em 'AlegreyaSC';
   font-weight: bold;
@@ -1153,12 +1160,11 @@ h2 {
 }
 
 .section.contato .map-modal {
-  background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
   height: 550px;
   width: 1000px;
   left: 50%;
-  top: 143px;
+  top: 110px;
   margin-left: -500px;
   cursor: pointer;
 }
@@ -1185,6 +1191,13 @@ h2 {
   z-index: 1;
 }
 
+@media screen and (min-width: 451px) {
+  .section.contato #fechamapa {
+    top: calc(85% - -5px);
+    left: calc(50% - 35px);
+ }
+}
+
 @media screen and (min-width: 601px) {
   .section.contato .form {
     width: calc(100% - 6em);
@@ -1195,10 +1208,11 @@ h2 {
   }
   
   .section.contato #fechamapa {
-    top: 150px;
-    left: 50%;
-    padding-left: 200px;
-  }
+    top: 171px;
+    left: inherit;
+    right: 5px;
+    width: 75px;
+ }
 }
 
 @media screen and (min-width: 1025px) {
@@ -1219,8 +1233,8 @@ h2 {
   
   .section.contato #fechamapa {
     top: 180px;
-    left: 50%;
-    padding-left: 405px;
+    left: 75%;
+    width: 128px;
   }
 }
 .section.footer {
