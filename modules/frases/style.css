@@ -8,6 +8,10 @@
   display: none;
 }
 
+.section.frase.nao-fixo {
+  background-attachment: scroll;
+}
+
 .section.frase p {
   background-color: rgba(255, 255, 255, 1);
   color: #520034;
