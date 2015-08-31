@@ -339,9 +339,9 @@ h2 {
     cursor: pointer;
   }
 
-  .menu .menu-bar.rotate {
+  /*.menu .menu-bar.rotate {
     transform: rotate(90deg);
-  }
+  }*/
 }
 
 @media screen and (max-width: 600px) {
@@ -377,7 +377,6 @@ h2 {
 .section.servicos .postit:after {
   background-image: url('assets/img/Servicos/percevejo.png');
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
-  background-position: -1px -1px;
   border-radius: 50%;
   content: '';
   position: absolute;

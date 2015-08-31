@@ -134,9 +134,9 @@
     cursor: pointer;
   }
 
-  .menu .menu-bar.rotate {
+  /*.menu .menu-bar.rotate {
     transform: rotate(90deg);
-  }
+  }*/
 }
 
 @media screen and (max-width: 600px) {
