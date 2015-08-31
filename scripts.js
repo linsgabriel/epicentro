@@ -137,7 +137,15 @@ $(function() {
     mostraImagem('papilon');
     mostraImagem('preventser');
     mostraImagem('apave');
-// Equipe
+var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+var isFirefox = typeof InstallTrigger !== 'undefined';
+var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+var isChrome = !!window.chrome && !isOpera;
+var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+if (isChrome) {
+  document.getElementsByClassName('frase')[0].className = "section frase nao-fixo";
+}// Equipe
 
 function mostrarDescricao(arg) {
 
