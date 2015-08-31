@@ -998,7 +998,7 @@ h2 {
 
 .section.equipe span.nomeFuncao {
   position: absolute;
-  margin-left: -50%;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(83,25,63,.65);
