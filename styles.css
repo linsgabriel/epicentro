@@ -902,10 +902,6 @@ h2 {
   display: none;
 }
 
-.section.frase.nao-fixo {
-  background-attachment: scroll;
-}
-
 .section.frase p {
   background-color: rgba(255, 255, 255, 1);
   color: #520034;
@@ -1076,12 +1072,8 @@ h2 {
   background-attachment: fixed;
   background-position: center;
   font-family: 'AlegreyaSC';
-  height: 100%;
+  height: 660px;
   overflow: hidden;
-}
-
-.section.contato.nao-fixo {
-  background-attachment: scroll;
 }
 
 .section.contato:after {
@@ -1108,32 +1100,24 @@ h2 {
   padding: 1em;
   position: relative;
   top: 30px;
-  margin-left: 10px;
+  margin: 0 auto;
   width: calc(100% - 2em);
   z-index: 2;
 }
 
-.section.contato #formul {
-  -moz-transition: top 1s;
-  -webkit-transition: top 1s;
-  -o-transition: top 1s;
-  transition: top 1s;
-}
-
-.section.contato #fechamapa {
-  position: absolute;
-  top: calc(85% - -24px);
-  left: calc(50% - 35px);
-  z-index: 10;
-  cursor: pointer;
+.section.contato .fecha-mapa,
+.section.contato .abre-mapa {
   background-color: #c00;
+  border: 0;
   border-radius: 5px;
   color: #fff;
+  float: right;
+  cursor: pointer;
   font: 1em 'AlegreyaSC';
   font-weight: bold;
   padding: .5em 1em;
   letter-spacing: 1px;
-  text-align: center;
+  margin-left: 15px
 }
 
 .section.contato .form .full {
@@ -1179,37 +1163,26 @@ h2 {
   width: 100%;
 }
 
-.section.contato .form .close {
-  background-color: transparent;
-  border: 0;
-  bottom: .5em;
-  color: #c00;
-  cursor: pointer;
-  font-size: 2em;
-  position: absolute;
-  right: .5em;
-}
-
 .section.contato .map-modal {
-  position: absolute;
-  height: 550px;
-  width: 1000px;
-  left: 50%;
-  top: 110px;
-  margin-left: -500px;
   cursor: pointer;
+  display: none;
+  height: 460px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+  top: 30px;
 }
 
-.section.contato .map-modal .fechar {
+.section.contato .map-modal .fecha-mapa {
   background-color: #c00;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
   font-weight: bold;
-  right: 90px;
   padding: 10px 15px;
   position: absolute;
-  top: 30px;
+  bottom: 15px;
+  right: calc(50% - 50px);
   z-index: 4;
 }
 
@@ -1222,13 +1195,6 @@ h2 {
   z-index: 1;
 }
 
-@media screen and (min-width: 451px) {
-  .section.contato #fechamapa {
-    top: calc(85% - -5px);
-    left: calc(50% - 35px);
- }
-}
-
 @media screen and (min-width: 601px) {
   .section.contato .form {
     width: calc(100% - 6em);
@@ -1237,13 +1203,6 @@ h2 {
   .section.contato .form textarea {
     min-height: 100px;
   }
-  
-  .section.contato #fechamapa {
-    top: 171px;
-    left: inherit;
-    right: 5px;
-    width: 75px;
- }
 }
 
 @media screen and (min-width: 1025px) {
@@ -1255,17 +1214,16 @@ h2 {
   }
 
   .section.contato .form {
-    top: 130px;
-    top: 130px;
-    left: 0;
+    top: 196px;
+    left: calc(50vw - 500px);
     position: absolute;
-    width: 25vw;
+    width: 400px;
   }
   
-  .section.contato #fechamapa {
-    top: 180px;
-    left: 75%;
-    width: 128px;
+  .section.contato .map-modal .fecha-mapa {
+    bottom: inherit;
+    right: 15px;
+    top: 60px;
   }
 }
 .section.footer {
