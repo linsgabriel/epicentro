@@ -1,8 +1,8 @@
 <header class="jumbotron" id="topo">
   <h1 class="hidden">Epicentro Tecnologia</h1>
   <?php include 'modules/menu/index.html' ?>
-  <div class="banner">
-    <ul>
+  <div class="banner slider">
+    <ul class="image-list">
       <li style="background-image: url('assets/img/Jumbotron/jumbotron1.jpg')">
         <div class="frase">
           <p>A Epicentro Tecnologia desenvolve <br>soluções em páginas web, <br>sistemas de gerenciamento de<br> conteúdo e design gráfico</p>
