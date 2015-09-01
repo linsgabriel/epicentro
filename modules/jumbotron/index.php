@@ -19,13 +19,6 @@
         </div>
       </li>
     </ul>
-    <div class="dots">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
   </div>
   <p class="telefone">3832-6789 - Ubatuba-SP</p>
 </header>

@@ -73,12 +73,90 @@ h2 {
   display: block;
 }
 
-@media screen and (max-width: 450px) {
-  .section {
-    padding-bottom: 30px;
-  }
+/* Imagens responsivas Frase */
 
-  .section h1 {
-    font: 30px 'AlegreyaSC', Arial, sans-serif;
+@media screen and (min-width: 321px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo320.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo640.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo800.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1024.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1280.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1440.jpg');
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1920.jpg');
+  }
+}
+
+/* Imagens responsivas Equipe */
+
+@media screen and (min-width: 321px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe320.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe640.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe800.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1024.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1280.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1440.jpg');
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1920.jpg');
   }
 }

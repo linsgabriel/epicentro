@@ -73,13 +73,91 @@ h2 {
   display: block;
 }
 
-@media screen and (max-width: 450px) {
-  .section {
-    padding-bottom: 30px;
-  }
+/* Imagens responsivas Frase */
 
-  .section h1 {
-    font: 30px 'AlegreyaSC', Arial, sans-serif;
+@media screen and (min-width: 321px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo320.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo640.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo800.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1024.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1280.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1440.jpg');
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1920.jpg');
+  }
+}
+
+/* Imagens responsivas Equipe */
+
+@media screen and (min-width: 321px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe320.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe640.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe800.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1024.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1280.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1440.jpg');
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1920.jpg');
   }
 }
 /* Jumbotron ---------------------------------------------------------------- */
@@ -87,146 +165,121 @@ h2 {
 .jumbotron {
   color: #fff;
   font-family: 'AlegreyaSans';
-  max-height: 100vh;
-  overflow-y: hidden;
   position: relative;
-  z-index: 4;
 }
-
-.jumbotron .banner {
-  position: relative;
-  overflow: auto;
-  max-width: 100%;
-  z-index: 2;
-}
-
-.jumbotron .banner li {
-  list-style: none;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
-
 
 .jumbotron .banner ul li {
-  float: left;
   background-size: cover;
   background-position: center;
+  float: left;
+  list-style: none;
 }
 
 .jumbotron .banner ul li .frase {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  margin-top: 20%;
-  z-index: 3;
-}
-
-.jumbotron .banner ul li .frase p {
-  display: inherit;
-  text-align: center;
-  text-shadow: 1px 1px 3px #000;
-}
-
-.jumbotron .banner .dots {
-  position: absolute;
-  top: 90vh;
-  left: calc(50% - 55px);
-}
-
-
-.jumbotron .banner .dots li {
-  position: relative;
-  display: inline-block;
-  margin-left: 15px;
-  max-height: 15px; 
-  width: 15px;
-  height: 15px;
-  border-radius: 100px;
-  background-color: #fff;
-  opacity: .3;
-  border: 1px solid #fff;
-  cursor: pointer;
-  text-indent: -999em;
-}
-
-.jumbotron .banner .dots li.active {
-  opacity: 1;
-}
-
-.jumbotron .telefone {
+  left: 0;
   position: relative;
   text-align: center;
-  text-shadow: 1px 1px 3px #000;
-  z-index: 3;
+  top: calc(50vh - 30px);
   width: 100%;
 }
 
-/* Resolução 320px - 600px */
+.jumbotron .banner ul li .frase p {
+  text-shadow: 1px 1px 5px #000;
+}
 
+.jumbotron .banner .dots {
+  bottom: 90px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
 
-  .jumbotron {
-    margin-top: 70px;
-  }
+.jumbotron .banner .dots li {
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0;
+  list-style: none;
+  margin-right: 15px;
+  padding: 8px;
+}
 
-  .jumbotron .banner ul li .frase {
-    width: 100%;
-    top: 20%;
-  }
+.jumbotron .banner .dots li:last-child {
+  margin-right: 0;
+}
 
-  .jumbotron .banner ul li .frase p {
-    font-size: 6vw;
-    letter-spacing: 1px;
-  }
+.jumbotron .banner .dots li.active {
+  background-color: rgba(255, 255, 255, 1);
+}
 
-  .jumbotron .telefone {
-    bottom: 1vw;
-    font-size: 4vw;
-  }
+.jumbotron .telefone {
+  bottom: 30px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 3px #000;
+  width: 100%;
+}
 
+/* 320px */
+
+.jumbotron .banner ul li {
+  height: 100vw;
+}
+
+.jumbotron .banner ul li .frase {
+  top: calc(50vw - 30px);
+}
+
+.jumbotron .banner .frase {
+  font-size: 5vw;
+  letter-spacing: 2px;
+}
+
+.jumbotron .banner ul li.jumbo-bg {
+  width: 100%;
+}
 
 @media screen and (min-width: 601px) {
 
-  .jumbotron .banner ul li .frase p {
-    font-size: 4vw;
-    letter-spacing: 4px;
+  .jumbotron .banner ul li .frase {
+    top: calc(35vw - 30px);
   }
 
-  .jumbotron .telefone {
-    bottom: 1vw;
-    font-size: 2vw;
+  .jumbotron .banner ul li {
+    height: 70vw;
+  }
+
+  .jumbotron .banner .frase {
+    font-size: 3vw;
+    letter-spacing: 4px;
   }
 }
 
-
 @media screen and (min-width: 801px) {
 
-  .jumbotron {
-    margin-top: 0;
+  .jumbotron .banner ul li {
+    height: 100vh;
   }
 
-  .jumbotron .banner ul li .frase {
-    top: 40%;
-  }
-
-  .jumbotron .banner ul li .frase p {
-    font-size: 2.5vw;
+  .jumbotron .banner .frase {
+    font-size: 2vw;
     letter-spacing: 4px;
   }
 }
 
 @media screen and (min-width: 1025px) {
 
-  .jumbotron .banner ul li .frase p {
+  .jumbotron .banner ul li {
+    height: 100vh;
+  }
+
+  .jumbotron .banner .frase {
     font-size: 2vw;
     letter-spacing: 4px;
   }
-
-  .jumbotron .telefone {
-    bottom: 2vw;
-    font-size: 1.2vw;
-  }
-}
-/*------------- CSS Menu -------------------*/
+}/*------------- CSS Menu -------------------*/
 .menu {
   position: fixed;
   top: 0;
@@ -895,7 +948,6 @@ h2 {
 }/* Frase -------------------------------------------------------------------- */
 
 .section.frase {
-  background: url('assets/img/Frase/fundo.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -927,7 +979,6 @@ h2 {
   }
 }
 .section.equipe {
-  background-image: url('assets/img/Equipe/equipe.jpg');
   background-size: cover;
   background-position: center;
   overflow: hidden;

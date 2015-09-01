@@ -1,7 +1,6 @@
 /* Frase -------------------------------------------------------------------- */
 
 .section.frase {
-  background: url('assets/img/Frase/fundo.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
