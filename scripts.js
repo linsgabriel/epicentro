@@ -3,8 +3,6 @@
 var resolucao = window.innerWidth;
 var  numeroDeImagens = $('.jumbotron .banner .image-list li').length;
 
-console.log(numeroDeImagens);
-
 if (resolucao < 320) {
 
   $('.jumbotron .banner').removeClass('slider');
