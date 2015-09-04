@@ -160,3 +160,171 @@ h2 {
     background-image: url('assets/img/Equipe/equipe1920.jpg');
   }
 }
+
+
+/* Imagens responsivas Serviços */
+
+@media screen and (min-width: 321px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo320.png');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo640.png');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo800.png');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo1024.png');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo1300.png');
+  }
+}
+
+
+/* Imagens responsivas Jumbotron */
+
+/* Primeira */
+
+@media screen and (min-width: 321px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron1320.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron1640.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron1800.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron11024.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron11280.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron11440.jpg');
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron11920.jpg');
+  }
+}
+
+/* Segunda */
+
+@media screen and (min-width: 321px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron2320.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron2640.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron2800.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron21024.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron21280.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron21440.jpg');
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron21920.jpg');
+  }
+}
+
+/* Terceira */
+
+@media screen and (min-width: 321px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron3320.jpg');
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron3640.jpg');
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron3800.jpg');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron31024.jpg');
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron31280.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron31440.jpg');
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron31920.jpg');
+  }
+}

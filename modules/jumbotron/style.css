@@ -18,7 +18,7 @@
   left: 0;
   position: relative;
   text-align: center;
-  top: calc(50vh - 30px);
+  top: calc(50% - 30px);
   width: 100%;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .jumbotron .banner ul li .frase {
-  top: calc(50vw - 30px);
+  top: calc(50% - 30px);
 }
 
 .jumbotron .banner .frase {
@@ -83,7 +83,7 @@
 @media screen and (min-width: 601px) {
 
   .jumbotron .banner ul li .frase {
-    top: calc(35vw - 30px);
+    top: calc(50% - 30px);
   }
 
   .jumbotron .banner ul li {
