@@ -75,39 +75,43 @@ h2 {
 
 /* Imagens responsivas Frase */
 
-@media screen and (min-width: 321px) {
-  .section.frase {
-    background-image: url('assets/img/Frase/fundo320.jpg');
-  }
+.section.frase {
+  background-image: url('assets/img/Frase/fundo320.jpg');
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 321px) {
   .section.frase {
     background-image: url('assets/img/Frase/fundo640.jpg');
   }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 641px) {
   .section.frase {
     background-image: url('assets/img/Frase/fundo800.jpg');
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 801px) {
   .section.frase {
     background-image: url('assets/img/Frase/fundo1024.jpg');
   }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1025px) {
   .section.frase {
     background-image: url('assets/img/Frase/fundo1280.jpg');
   }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1281px) {
   .section.frase {
     background-image: url('assets/img/Frase/fundo1440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .section.frase {
+    background-image: url('assets/img/Frase/fundo1920.jpg');
   }
 }
 
@@ -119,39 +123,43 @@ h2 {
 
 /* Imagens responsivas Equipe */
 
-@media screen and (min-width: 321px) {
-  .section.equipe {
-    background-image: url('assets/img/Equipe/equipe320.jpg');
-  }
+.section.equipe {
+  background-image: url('assets/img/Equipe/equipe320.jpg');
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 321px) {
   .section.equipe {
     background-image: url('assets/img/Equipe/equipe640.jpg');
   }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 641px) {
   .section.equipe {
     background-image: url('assets/img/Equipe/equipe800.jpg');
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 801px) {
   .section.equipe {
     background-image: url('assets/img/Equipe/equipe1024.jpg');
   }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1025px) {
   .section.equipe {
     background-image: url('assets/img/Equipe/equipe1280.jpg');
   }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1281px) {
   .section.equipe {
     background-image: url('assets/img/Equipe/equipe1440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .section.equipe {
+    background-image: url('assets/img/Equipe/equipe1920.jpg');
   }
 }
 
@@ -164,27 +172,31 @@ h2 {
 
 /* Imagens responsivas Serviços */
 
-@media screen and (min-width: 321px) {
   .section.servicos {
     background-image: url('assets/img/Servicos/fundo320.png');
   }
-}
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 321px) {
   .section.servicos {
     background-image: url('assets/img/Servicos/fundo640.png');
   }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 641px) {
   .section.servicos {
     background-image: url('assets/img/Servicos/fundo800.png');
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 801px) {
   .section.servicos {
     background-image: url('assets/img/Servicos/fundo1024.png');
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .section.servicos {
+    background-image: url('assets/img/Servicos/fundo1300.png');
   }
 }
 
@@ -199,39 +211,43 @@ h2 {
 
 /* Primeira */
 
-@media screen and (min-width: 321px) {
-  .jumbotron .primeira {
-    background-image: url('assets/img/Jumbotron/jumbotron1320.jpg');
-  }
+.jumbotron .primeira {
+  background-image: url('assets/img/Jumbotron/jumbotron1320.jpg');
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 321px) {
   .jumbotron .primeira {
     background-image: url('assets/img/Jumbotron/jumbotron1640.jpg');
   }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 641px) {
   .jumbotron .primeira {
     background-image: url('assets/img/Jumbotron/jumbotron1800.jpg');
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 801px) {
   .jumbotron .primeira {
     background-image: url('assets/img/Jumbotron/jumbotron11024.jpg');
   }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1025px) {
   .jumbotron .primeira {
     background-image: url('assets/img/Jumbotron/jumbotron11280.jpg');
   }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1281px) {
   .jumbotron .primeira {
     background-image: url('assets/img/Jumbotron/jumbotron11440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .jumbotron .primeira {
+    background-image: url('assets/img/Jumbotron/jumbotron11920.jpg');
   }
 }
 
@@ -243,39 +259,43 @@ h2 {
 
 /* Segunda */
 
-@media screen and (min-width: 321px) {
-  .jumbotron .segunda {
-    background-image: url('assets/img/Jumbotron/jumbotron2320.jpg');
-  }
+.jumbotron .segunda {
+  background-image: url('assets/img/Jumbotron/jumbotron2320.jpg');
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 321px) {
   .jumbotron .segunda {
     background-image: url('assets/img/Jumbotron/jumbotron2640.jpg');
   }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 641px) {
   .jumbotron .segunda {
     background-image: url('assets/img/Jumbotron/jumbotron2800.jpg');
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 801px) {
   .jumbotron .segunda {
     background-image: url('assets/img/Jumbotron/jumbotron21024.jpg');
   }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1025px) {
   .jumbotron .segunda {
     background-image: url('assets/img/Jumbotron/jumbotron21280.jpg');
   }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1281px) {
   .jumbotron .segunda {
     background-image: url('assets/img/Jumbotron/jumbotron21440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .jumbotron .segunda {
+    background-image: url('assets/img/Jumbotron/jumbotron21920.jpg');
   }
 }
 
@@ -287,39 +307,43 @@ h2 {
 
 /* Terceira */
 
-@media screen and (min-width: 321px) {
-  .jumbotron .terceira {
-    background-image: url('assets/img/Jumbotron/jumbotron3320.jpg');
-  }
+.jumbotron .terceira {
+  background-image: url('assets/img/Jumbotron/jumbotron3320.jpg');
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 321px) {
   .jumbotron .terceira {
     background-image: url('assets/img/Jumbotron/jumbotron3640.jpg');
   }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 641px) {
   .jumbotron .terceira {
     background-image: url('assets/img/Jumbotron/jumbotron3800.jpg');
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 801px) {
   .jumbotron .terceira {
     background-image: url('assets/img/Jumbotron/jumbotron31024.jpg');
   }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1025px) {
   .jumbotron .terceira {
     background-image: url('assets/img/Jumbotron/jumbotron31280.jpg');
   }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1281px) {
   .jumbotron .terceira {
     background-image: url('assets/img/Jumbotron/jumbotron31440.jpg');
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .jumbotron .terceira {
+    background-image: url('assets/img/Jumbotron/jumbotron31920.jpg');
   }
 }
 
@@ -328,6 +352,7 @@ h2 {
     background-image: url('assets/img/Jumbotron/jumbotron31920.jpg');
   }
 }
+
 /* Jumbotron ---------------------------------------------------------------- */
 
 .jumbotron {
@@ -1140,7 +1165,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .section.frase {
     display: inherit;
   }
