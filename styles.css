@@ -864,6 +864,11 @@ h2 {
   opacity: .7;
 }
 
+.section.portfolio span#list-port {
+  list-style: none;
+  text-decoration: none;
+}
+
 .section.portfolio .laptop {
   background-image: url('assets/img/Portfolio/laptop.png');
   background-size: 100% 100%;
